@@ -14,12 +14,10 @@ window.onload = () => {
         console.log(window.scrollY);
         /*Increase the zoom factor based on the number of pixels the element has
         scrolled so far. The height should remain the same. */
-        //zoomScrollImage.style.backgroundPositionX = (51 + window.scrollY/990) + '%'
-        //zoomFrontImage.style.backgroundPositionX = (51 + window.scrollY/990) + '%'
         heroHeader.style.fontSize = (10 + window.scrollY/15) + 'vw';
         
         if (window.scrollY > 950) {
-            heroHeader.style.opacity -= 0.01;
+            heroHeader.style.opacity -= 0.01; //change the opacity when the user has scrolled this far.
             heroFade.style.opacity -= 0.01;
         } else {
             heroHeader.style.opacity = 1;
