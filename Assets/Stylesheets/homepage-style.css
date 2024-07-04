@@ -1,0 +1,27 @@
+/* This stylesheet is dedicated to the homepage. */
+
+/* 
+    Contents:
+    1. Hero Section Styles
+    2.
+*/
+
+/* 1. Hero Section Styles */
+
+#hero-section {
+    background: url("https://img.asmedia.epimg.net/resizer/v2/53BQS3TQUJBVRJW6V6XQMU4CAU.jpg?auth=2fd7053d8ada2a10dbc2388e0d9ecedebdf0c6e66ddbfbfed087817841dfade6&width=644&height=362&smart=true") center/cover fixed no-repeat;
+
+    height: 510vh;
+    z-index: 999; /*always on top*/
+}
+
+#zoom-scroll {
+    background: url('/Assets/Images/homepage-backdrop.png') center/cover fixed no-repeat;
+    height: 510vh;
+    position: sticky;
+    opacity: 1;
+}
+
+#hero-section-bg {
+    background-color: black;
+}
