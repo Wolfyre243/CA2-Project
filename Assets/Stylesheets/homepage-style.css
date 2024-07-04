@@ -15,11 +15,17 @@
     z-index: 999; /*always on top*/
 }
 
-#zoom-scroll {
-    background: url('/Assets/Images/homepage-backdrop.png') center/cover fixed no-repeat;
-    height: 510vh;
-    position: sticky;
-    opacity: 1;
+#hero-start {
+    background-color: white;
+    height: 100vh;
+}
+
+#hero-header {
+    font-size: 13vw;
+}
+
+#hero-fade {
+    height: 410vh;
 }
 
 #hero-section-bg {
