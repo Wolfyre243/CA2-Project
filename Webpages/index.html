@@ -18,15 +18,36 @@
 
 </head>
 <body class="container-fluid p-0">
-    <div id="hero-section" class="container-fluid p-0">
-        <div id="hero-start" class="d-flex">
-            <!--put the bubbles here-->
+
+    <div id="hero-section" class="container-fluid p-0 d-flex flex-column">
+        <div id="hero-start" class="container-fluid">
+            <div class="row text-center position-fixed top-0 start-0 w-25 h-25">
+                <div class="col d-md-none"> <!--On md and below devices, show this element.-->
+                    hello world
+                </div>
+                <div class="col d-none d-md-block"> <!--On devices above md, show this element instead.-->
+                    <div class="rounded-circle ratio ratio-1x1 w-25 h-auto bg-warning">
+                        testing
+                    </div>
+                </div>
+            </div>
+
             <h1 id="hero-header" class="text-center position-fixed top-50 start-50 translate-middle">SP70</h1>
-            <!--put the bubbles here-->
+            
+            <div class="row text-center position-fixed bottom-0 end-0 bg-black w-25 h-25">
+                <div class="col">
+                    hi
+                </div>
+                <div class="col">
+                    hello
+                </div>
+            </div>
         </div>
         <div id="hero-fade" class="bg-white"></div>
     </div>
-    <div id="hero-section-bg" class="position-absolute">
+
+
+    <div class="position-absolute">
         <h1>you made it!</h1>
     </div>
     
