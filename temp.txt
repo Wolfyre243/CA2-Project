@@ -1,0 +1,6 @@
+<div class="col d-md-none"> <!--On md and below devices, show this element.-->
+                    hello world
+                </div>
+                <div class="col d-none d-md-block"> <!--On devices above md, show this element instead.-->
+                    
+                </div>

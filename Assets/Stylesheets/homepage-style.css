@@ -29,3 +29,32 @@
     height: 410vh;
     z-index: 0;
 }
+
+/* 2. The Infinite Image Gallery (360 Carousel) */
+div.inf-gallery-left {
+    white-space: nowrap;
+    animation: movegalleryLeft 5s linear infinite; /* Adjust the time to make sure "teleporting" isnt obvious */
+}
+
+div.inf-gallery-right {
+    white-space: nowrap;
+    animation: movegalleryRight 5s linear infinite; /* Adjust the time to make sure "teleporting" isnt obvious */
+}
+
+@keyframes movegalleryLeft {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-56%,0); /* Adjust the translation% to make sure "teleporting" isnt obvious */
+    }
+}
+
+@keyframes movegalleryRight {
+    0% {
+        transform: translate(-56%,0);
+    }
+    100% {
+        transform: translate(0,0); /* Adjust the translation% to make sure "teleporting" isnt obvious */
+    }
+}
