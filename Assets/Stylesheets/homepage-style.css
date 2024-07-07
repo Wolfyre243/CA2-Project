@@ -21,7 +21,10 @@
 }
 
 #hero-header {
-    font-size: 13vw;
+    font-size: 15vh;
+    text-shadow: 5px 5px rgb(246, 50, 62, 0.6),
+                 10px 10px rgb(246, 50, 62, 0.4),
+                 15px 15px rgba(161, 0, 11, 0.2);
     color: rgb(246, 50, 62);
 }
 
@@ -31,9 +34,9 @@
 }
 
 /* 2. The Infinite Image Gallery (360 Carousel) */
-div.inf-gallery-left {
+div#img-gallery-1 {
     white-space: nowrap;
-    animation: movegalleryLeft 5s linear infinite; /* Adjust the time to make sure "teleporting" isnt obvious */
+    animation: movegalleryLeft1 6.5s linear infinite; /* Adjust the time to make sure "teleporting" isnt obvious */
 }
 
 div.inf-gallery-right {
@@ -43,20 +46,23 @@ div.inf-gallery-right {
 
 #gallery {
     display: grid;
-    grid-template-rows: 50px, 100px, 200px, 200px;
-    gap: 10px;
-    
+    grid-template-rows: 25vh, 25vh, 25vh, 25vh;
+    gap: 1px;   
+}
+
+#gallery img {
+    max-height: 25vh;
 }
 
 div#img-gallery-1 {
     grid-row: 1;
 }
 div#img-gallery-2 {
-    grid-row: 1;
+    grid-row: 2;
 }
 div#img-gallery-3 {
-    grid-row: 1;
+    grid-row: 3;
 }
 div#img-gallery-4 {
-    grid-row: 1;
+    grid-row: 4;
 }

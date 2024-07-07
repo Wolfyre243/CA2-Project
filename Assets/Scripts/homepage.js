@@ -8,6 +8,7 @@ window.onload = () => {
     let heroFade = document.getElementById('hero-fade');
     let heroStart = document.getElementById('hero-start');
     let body = document.body;
+    
 
     //Functions
 
