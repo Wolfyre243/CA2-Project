@@ -1,0 +1,17 @@
+@keyframes movegalleryLeft {
+    0% {
+        transform: translate(0,0);
+    }
+    100% {
+        transform: translate(-56%,0); /* Adjust the translation% to make sure "teleporting" isnt obvious */
+    }
+}
+
+@keyframes movegalleryRight {
+    0% {
+        transform: translate(-56%,0);
+    }
+    100% {
+        transform: translate(0,0); /* Adjust the translation% to make sure "teleporting" isnt obvious */
+    }
+}

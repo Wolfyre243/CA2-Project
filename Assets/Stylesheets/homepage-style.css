@@ -41,20 +41,22 @@ div.inf-gallery-right {
     animation: movegalleryRight 5s linear infinite; /* Adjust the time to make sure "teleporting" isnt obvious */
 }
 
-@keyframes movegalleryLeft {
-    0% {
-        transform: translate(0,0);
-    }
-    100% {
-        transform: translate(-56%,0); /* Adjust the translation% to make sure "teleporting" isnt obvious */
-    }
+#gallery {
+    display: grid;
+    grid-template-rows: 50px, 100px, 200px, 200px;
+    gap: 10px;
+    
 }
 
-@keyframes movegalleryRight {
-    0% {
-        transform: translate(-56%,0);
-    }
-    100% {
-        transform: translate(0,0); /* Adjust the translation% to make sure "teleporting" isnt obvious */
-    }
+div#img-gallery-1 {
+    grid-row: 1;
+}
+div#img-gallery-2 {
+    grid-row: 1;
+}
+div#img-gallery-3 {
+    grid-row: 1;
+}
+div#img-gallery-4 {
+    grid-row: 1;
 }
