@@ -22,5 +22,6 @@ Contents:
 "sp-logo-building.jpg" taken from https://www.sp.edu.sg/sp/about-sp/publications
 "sp-students-on-stairs.jpg" taken from thumbnail of https://www.youtube.com/watch?v=w_lFlr2aR0w
 "sp-robotics-room.jpg" taken from https://www.sp.edu.sg/engineering-cluster/mae/courses/full-time-diplomas/mechatronics-and-robotics/project-gallery
-
+"sp-grads.jpg" taken from https://www.sp.edu.sg/industry/span/stayingconnected
+"sp-library.jpg" taken from https://www.flickr.com/photos/66161322@N04/6024748614
 

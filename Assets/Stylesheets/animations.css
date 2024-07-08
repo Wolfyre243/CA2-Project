@@ -1,17 +1,17 @@
 @keyframes movegalleryLeft1 {
     0% {
-        transform: translate(0,0);
+        transform: translate(0%,0);
     }
     100% {
-        transform: translate(-58.5%,0); /* Adjust the translation% to make sure "teleporting" isnt obvious */
+        transform: translate(-58%,0); /* Adjust the translation% to make sure "teleporting" isnt obvious */
     }
 }
 
 /* default is -56% */
 
-@keyframes movegalleryRight {
+@keyframes movegalleryRight1 {
     0% {
-        transform: translate(-56%,0);
+        transform: translate(-59%,0);
     }
     100% {
         transform: translate(0,0); /* Adjust the translation% to make sure "teleporting" isnt obvious */

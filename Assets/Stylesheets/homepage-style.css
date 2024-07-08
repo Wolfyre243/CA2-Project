@@ -35,8 +35,14 @@
 
 /* 2. The Infinite Image Gallery (360 Carousel) */
 div#img-gallery-1 {
+    grid-row: 1;
     white-space: nowrap;
-    animation: movegalleryLeft1 6.5s linear infinite; /* Adjust the time to make sure "teleporting" isnt obvious */
+    animation: 6.5s linear infinite movegalleryLeft1; /* Adjust the time to make sure "teleporting" isnt obvious */
+}
+
+div#img-gallery-2 {
+    white-space: nowrap;
+    animation: movegalleryRight1 8s linear infinite; /* Adjust the time to make sure "teleporting" isnt obvious */
 }
 
 div.inf-gallery-right {
@@ -52,10 +58,6 @@ div.inf-gallery-right {
 
 #gallery img {
     max-height: 25vh;
-}
-
-div#img-gallery-1 {
-    grid-row: 1;
 }
 div#img-gallery-2 {
     grid-row: 2;
