@@ -37,12 +37,12 @@
 div#img-gallery-1 {
     grid-row: 1;
     white-space: nowrap;
-    animation:  movegalleryLeft 8s linear infinite; /* Adjust the time to make sure "teleporting" isnt obvious */
+    animation:  movegalleryLeft 15s linear infinite; /* Adjust the time to make sure "teleporting" isnt obvious */
 }
 
 div#img-gallery-2 {
     white-space: nowrap;
-    animation: movegalleryRight 10s linear infinite; /* Adjust the time to make sure "teleporting" isnt obvious */
+    animation: movegalleryRight 15s linear infinite; /* Adjust the time to make sure "teleporting" isnt obvious */
 }
 
 div.inf-gallery-right {
