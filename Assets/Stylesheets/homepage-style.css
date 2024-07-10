@@ -10,14 +10,13 @@
 
 #hero-section {
     background: url(../Images/infinite-gallery-r1/old-sp_1.png) center/cover fixed no-repeat;
-    height: 510vh;
-    
+    height: 500vh;
 }
 
 #hero-start {
     background-color: white;
     height: 100vh;
-    z-index: 999;
+    
 }
 
 #hero-header {
@@ -26,11 +25,6 @@
                  10px 10px rgb(246, 50, 62, 0.4),
                  15px 15px rgba(161, 0, 11, 0.2);
     color: rgb(246, 50, 62);
-}
-
-#hero-fade {
-    
-    z-index: 0;
 }
 
 /* 2. The Infinite Image Gallery (360 Carousel) */
@@ -61,10 +55,4 @@ div.inf-gallery-right {
 }
 div#img-gallery-2 {
     grid-row: 2;
-}
-div#img-gallery-3 {
-    grid-row: 3;
-}
-div#img-gallery-4 {
-    grid-row: 4;
 }

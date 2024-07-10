@@ -11,11 +11,13 @@ window.onload = () => {
     
 
     //Functions
+    //const timeCarousel = document.getElementById('timeline-carousel');
+    
 
     //Event Listeners
     document.addEventListener('scroll', () => {
         //For debugging purposes
-        console.log(`Scrolling at: ${window.scrollY}, Body height: ${body.scrollHeight}`);
+        //console.log(`Scrolling at: ${window.scrollY}, Body height: ${body.scrollHeight}`);
         /*Increase the zoom factor based on the number of pixels the element has
         scrolled so far. The height should remain the same. */
         let currentOpacity = 1 - ((window.scrollY/body.scrollHeight)*2.5);
@@ -23,6 +25,15 @@ window.onload = () => {
         heroFade.style.opacity = currentOpacity;
         heroStart.style.opacity = currentOpacity;
         heroHeader.style.opacity = currentOpacity;
+
+        if (currentOpacity <= 0) {
+            heroHeader.style.visibility = 'hidden';
+            heroHeader.disabled = true;
+            heroStart.disabled = true;
+        } else if (currentOpacity > 0) {
+            heroHeader.style.visibility = 'visible';
+            heroStart.disabled = false;
+        }
         
         console.log('poom');
     });
