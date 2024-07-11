@@ -24,28 +24,27 @@
     <!--Sticky Navbar-->
     <nav class="navbar navbar-expand-md sticky-top bg-danger" data-bs-theme="dark">
         <div class="container-fluid justify-content-between justify-content-md-center">
-            <a href="#" class="navbar-brand">Celebrating SP70</a>
-            <div id="offcanvasNav" class="offcanvas-md offcanvas-end">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title">Testing Navbar</h5>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="nav nav-underline navbar-nav text-dark">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">XXX</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Well Wishes</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav">
+            <a href="#" class="navbar-brand p-0">
+                <img src="../Assets/Images/sp70-logo.png" alt="Logo of SP70" style="width: 2.5vw;" class="d-none d-lg-inline">
+                Celebrating SP70
+            </a>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav nav-underline navbar-nav text-dark">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">XXX</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Well Wishes</a>
+                    </li>
+                </ul>
+            </div>
+            
             
         </div>
     </nav>
@@ -117,33 +116,32 @@
     </div>
 
     <div class="container-fluid p-0 flex-column">
-        <!--Timeline Carousel-->
-        <div class="container-fluid p-0 flex-column d-flex vh-100 mt-1">
-
-            <div class="container-fluid p-0 m-auto mt-4" style="width: 90%; max-height: 80%;">
-                <div class="carousel slide" id="timeline-carousel" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    </div>
-                    <div class="carousel-inner" style="max-height: 75vh;">
-                        <div class="carousel-item active">
-                            <img src="../Assets/Images/infinite-gallery-r1/hilltop-sp.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../Assets/Images/infinite-gallery-r1/hilltop-sp.jpg" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="../Assets/Images/infinite-gallery-r1/hilltop-sp.jpg" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-            
+        <div class="bg-danger vh-25">
+            &nbsp;
         </div>
-        <div class="vh-100">hi</div>
+        <!--Timeline Carousel-->
+        <div class="container-fluid p-0 flex-column d-flex vh-100">
+            <div class="carousel slide h-100" id="timeline-carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner h-100">
+                    <div id="time-carousel-item1" class="carousel-item active bg-black" style="min-height: 100vh;">
+                        
+                    </div>
+                    <div id="time-carousel-item2" class="carousel-item" style="min-height: 100vh;">
+                        
+                    </div>
+                    <div id="time-carousel-item3" class="carousel-item" style="min-height: 100vh;">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="vh-100">hi this is skibidi</div>
     </div>
 
 
