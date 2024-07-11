@@ -8,6 +8,10 @@
 
 /* 1. Hero Section Styles */
 
+#sticky-nav {
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+}
+
 #hero-section {
     background: url(../Images/infinite-gallery-r1/old-sp_1.png) center/cover fixed no-repeat;
     height: 500vh;
