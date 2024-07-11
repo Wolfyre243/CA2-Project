@@ -35,7 +35,11 @@ window.onload = () => {
             heroStart.disabled = false;
         }
         
-        console.log('poom');
+        //console.log('poom');
     });
+
+    document.addEventListener('scroll', () => {
+        
+    })
 }
     

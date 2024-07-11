@@ -21,6 +21,34 @@
 
 </head>
 <body>
+    <!--Sticky Navbar-->
+    <nav class="navbar navbar-expand-md sticky-top bg-danger" data-bs-theme="dark">
+        <div class="container-fluid justify-content-between justify-content-md-center">
+            <a href="#" class="navbar-brand">Celebrating SP70</a>
+            <div id="offcanvasNav" class="offcanvas-md offcanvas-end">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title">Testing Navbar</h5>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="nav nav-underline navbar-nav text-dark">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">XXX</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Well Wishes</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        </div>
+    </nav>
     <div id="hero-section" class="container-fluid p-0 d-flex flex-column">
         <div id="hero-start" class="container-fluid p-0 bg-black">
             <div id="gallery" class="container-fluid p-0 overflow-hidden bg-black position-fixed top-50 start-50 translate-middle">
@@ -89,40 +117,10 @@
     </div>
 
     <div class="container-fluid p-0 flex-column">
-
-        <!--Sticky Navbar-->
-        <nav class="navbar navbar-expand-md sticky-top bg-danger" data-bs-theme="dark">
-            <div class="container-fluid justify-content-between justify-content-md-center">
-                <a href="#" class="navbar-brand">Celebrating SP70</a>
-                <div id="offcanvasNav" class="offcanvas-md offcanvas-end">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title">Testing Navbar</h5>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="nav nav-underline navbar-nav text-dark">
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">XXX</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#" class="nav-link">Well Wishes</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <button class="navbar-toggler d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                
-            </div>
-        </nav>
-        
-        <!--Snap Scroll Container-->
+        <!--Timeline Carousel-->
         <div class="container-fluid p-0 flex-column d-flex vh-100 mt-1">
-            <!--Carousel-->
-            <div class="container-fluid p-0 m-auto mt-3" style="width: 90%; max-height: 80%;">
+
+            <div class="container-fluid p-0 m-auto mt-4" style="width: 90%; max-height: 80%;">
                 <div class="carousel slide" id="timeline-carousel" data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>

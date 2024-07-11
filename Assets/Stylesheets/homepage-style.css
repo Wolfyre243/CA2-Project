@@ -56,3 +56,10 @@ div.inf-gallery-right {
 div#img-gallery-2 {
     grid-row: 2;
 }
+
+/* 3. Snap Scroll Container */
+.scroll-snap-container {
+    height: 90vh;
+    
+}
+
