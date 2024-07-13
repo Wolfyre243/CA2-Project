@@ -38,3 +38,12 @@
 .not-in-view {
     opacity: 0;
 }
+
+@keyframes cursor-blink {
+    from, to {
+        background-color: transparent;
+    }
+    50% {
+        background-color: black;
+    }
+}

@@ -1,0 +1,13 @@
+/* This stylesheet is dedicated to the homepage. */
+
+/* 
+    Contents:
+    1. Introductory Section
+    2.
+*/
+
+/* 1. Introductory Section */
+
+#cursor {
+    animation: cursor-blink 0.5s step-end infinite;
+}

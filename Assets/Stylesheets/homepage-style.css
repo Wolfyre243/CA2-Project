@@ -3,7 +3,9 @@
 /* 
     Contents:
     1. Hero Section Styles
-    2.
+    2. Infinite Image Gallery Styles
+    3. Timeline Carousel Styles
+    4. Statistic Card Styles
 */
 
 /* 1. Hero Section Styles */
@@ -61,7 +63,7 @@ div#img-gallery-2 {
     grid-row: 2;
 }
 
-/* 3. Time Carousel */
+/* 3. Time Carousel Styles */
 #time-carousel-item1 {
     background: url(../Images/infinite-gallery-r1/old-sp_1.png) center/cover no-repeat;
 }
@@ -81,3 +83,5 @@ button.timeline-button {
 button.timeline-button:hover {
     box-shadow: 0px 0px 20px rgba(255,255,255,0.8);
 }
+
+/* 4. Statistic Cards Styles */

@@ -31,7 +31,7 @@ document.addEventListener('scroll', () => {
     }
 });
 
-const observer = new IntersectionObserver((entries) => {
+const fadeInObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
             entry.target.classList.add("in-view");
@@ -48,5 +48,5 @@ const observer = new IntersectionObserver((entries) => {
 
 const tags = document.querySelectorAll('.fly-in');
 tags.forEach((tag) => {
-    observer.observe(tag);
+    fadeInObserver.observe(tag);
 })
