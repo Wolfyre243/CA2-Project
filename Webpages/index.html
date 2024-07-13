@@ -17,7 +17,8 @@
     <link rel="stylesheet" href="../Assets/Stylesheets/animations.css"/>
 
     <!--Scripts-->
-    <script src="../Assets/Scripts/homepage.js"></script>
+    
+    
 
 </head>
 <body>
@@ -121,10 +122,10 @@
         <!--Timeline Carousel-->
         <div class="container-fluid p-0 flex-column d-flex vh-100">
             <div class="carousel slide h-100" id="timeline-carousel" data-bs-ride="carousel">
-                <div class="row w-75 bg-danger position-absolute bottom-0 start-50 translate-middle-x z-3 justify-content-between d-none d-lg-flex" style="height: 1vh; margin-bottom: 8%;">
-                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="0" class="active col-2 rounded-circle ratio ratio-1x1 top-50 translate-middle-y border border-5 border-danger" style="width: 6vw; margin-left: -1%;" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="1" class="col-2 rounded-circle ratio ratio-1x1 top-50 translate-middle-y border border-5 border-danger" style="width: 6vw;" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="2" class="col-2 rounded-circle ratio ratio-1x1 top-50 translate-middle-y border border-5 border-danger" style="width: 6vw; margin-right: -1%;" aria-label="Slide 3"></button>
+                <div id="timeline-controls" class="row w-75 bg-danger position-absolute bottom-0 start-50 translate-middle-x z-3 justify-content-between d-none d-lg-flex" style="height: 1vh; margin-bottom: 6%;">
+                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="0" class="active col-2 rounded-circle ratio ratio-1x1 top-50 translate-middle-y border border-5 border-danger timeline-button" style="width: 3vw; height: 3vw; margin-left: -1%;" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="1" class="col-2 rounded-circle ratio ratio-1x1 top-50 translate-middle-y border border-5 border-danger timeline-button" style="width: 3vw; height: 3vw;" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="2" class="col-2 rounded-circle ratio ratio-1x1 top-50 translate-middle-y border border-5 border-danger timeline-button" style="width: 3vw; height: 3vw; margin-right: -1%;" aria-label="Slide 3"></button>
                 </div>
                 <div class="carousel-inner h-100">
                     <div id="time-carousel-item1" class="carousel-item active bg-black" style="min-height: 100vh;">
@@ -137,14 +138,74 @@
                         
                     </div>
                 </div>
+                <div class="h-75 bg-danger position-absolute top-0 end-0 translate-middle-x z-3 justify-content-between d-flex flex-column d-lg-none mx-3" style="width: 1vw; margin-top: 25%;">
+                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="0" class="active rounded-circle ratio ratio-1x1 start-50 translate-middle-x border border-5 border-danger timeline-button" style="width: 3vh; height: 3vh; margin-top: -1%;" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="1" class="rounded-circle ratio ratio-1x1 start-50 translate-middle-x border border-5 border-danger timeline-button" style="width: 3vh; height: 3vh;" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="2" class="rounded-circle ratio ratio-1x1 start-50 translate-middle-x border border-5 border-danger timeline-button" style="width: 3vh; height: 3vh; margin-bottom: -1%;" aria-label="Slide 3"></button>
+                </div>
+                <!--
+                <div class="carousel-indicators mb-5 d-flex d-lg-none">
+                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                -->
                 
             </div>
         </div>
-        <div class="vh-100">hi this is skibidi</div>
+        <!--Statistic Cards-->
+        <div class="container-fluid p-0 row vh-100 w-100 m-auto">
+            <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
+                <div class="card m-auto w-100 fly-in">
+                    <div class="card-header">
+                        Graduates
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-body">Card Title</h5>
+                        <p class="card-text">Blah blah blah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
+                <div class="card m-auto w-100 fly-in">
+                    <div class="card-header">
+                        Graduates
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-body">Card Title</h5>
+                        <p class="card-text">Blah blah blah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
+                <div class="card m-auto w-100 fly-in">
+                    <div class="card-header">
+                        Graduates
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-body">Card Title</h5>
+                        <p class="card-text">Blah blah blah</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
+                <div class="card m-auto w-100 fly-in">
+                    <div class="card-header">
+                        Graduates
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-body">Card Title</h5>
+                        <p class="card-text">Blah blah blah</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    
+    
 
 
     
-    
+    <script src="../Assets/Scripts/homepage.js"></script>
 </body>
 </html>

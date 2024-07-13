@@ -18,3 +18,23 @@
         transform: translate(0,0); /* Adjust the translation% to make sure "teleporting" isnt obvious */
     }
 }
+
+@keyframes intersection-fade-in {
+    0% {
+        opacity: 0;
+        transform: translate(0, 100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+/* Fly-in Animations */
+.in-view {
+    animation: intersection-fade-in 1s 0.2s both;
+}
+
+.not-in-view {
+    opacity: 0;
+}
