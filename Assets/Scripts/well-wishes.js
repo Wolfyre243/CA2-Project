@@ -1,48 +1,22 @@
-//Variables
+//------------------------------Variables-------------------------------------
 let typingBox = document.getElementById('typing-box');
 
 const wordBank = ["happy", "cool", "awesome", "amazing"];
 let randomIndex = 0;
 
-//Functions
-function typewriter(element, text, index = 0) {
+//------------------------------Functions---------------------------------------
+function typewriter(element, text, i = 0) {
     
     console.log("typing"); //debugging
-    
-    if (index === text.length) {
+
+    if (i === 0) {
+        element.textContent = "";
+    } else if (i === text.length) {
         return;
-        /*new Promise((resolve) => {
-            console.log("finished typing")
-            resolve("finished typing");
-        });*/
     }
 
-    element.textContent = text.substring(0, index + 1);
-
-    setTimeout(() => 
-        typewriter(element, text, index+1)
-    , 50)
-    
-}
-
-function typewriterClear(element, text, index = text.length - 1) {
-    console.log("removing"); //debugging
-    
-    if (element.textContent === "") {
-        return;
-        /*new Promise((resolve) => {
-            setTimeout(() => {
-                console.log("finished removing");
-                resolve("finished removing");
-            }, 1000);
-        });*/
-    }
-
-    element.innerHTML = text.substring(0, index - 1);
-
-    setTimeout(() => 
-        typewriterClear(element, text, index - 1)
-    , 50)
+    element.textContent += text[i];
+    setTimeout(() => typewriter(element, text, i+1), 50)
 }
 
 const pickWord = (arr) => {
@@ -50,29 +24,16 @@ const pickWord = (arr) => {
     return arr[randomIndex];
 }
 
-//Main Code
-const typingObserver = new IntersectionObserver((entries) => {
+//-----------------------------Observers----------------------------------
+//Fly in animation observer
+const flyInObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            setInterval(async function () {
-                const randomWord = pickWord(wordBank);
-                console.log(randomWord);
-                typewriter(typingBox, randomWord);
-
-                //cooldown
-                await new Promise(r => {
-                    setTimeout(() => {
-                        r(2);
-                    }, 3000);
-                })
-
-                typewriterClear(typingBox, randomWord);
-                /*
-                setTimeout(() => {
-                    typewriterClear(typingBox, randomWord);
-                }, 3000);
-                */
-            }, 5000);
+            entry.target.classList.add("in-view-fly-in");
+            entry.target.classList.remove("not-in-view-fly-out");
+        } else {
+            entry.target.classList.remove("in-view-fly-in");
+            entry.target.classList.add("not-in-view-fly-out");
         }
     })
 }, {
@@ -80,6 +41,56 @@ const typingObserver = new IntersectionObserver((entries) => {
     threshold: [0, 0.1, 1]
 });
 
-typingObserver.observe(typingBox);
+const flyInTags = document.querySelectorAll('.fly-in');
+flyInTags.forEach((tag) => {
+    flyInObserver.observe(tag);
+})
 
-console.log("hi");
+//Fly in from right animation observer
+const flyInRightObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("in-view-fly-right");
+            entry.target.classList.remove("not-in-view-fly-out");
+        } else {
+            entry.target.classList.remove("in-view-fly-right");
+            entry.target.classList.add("not-in-view-fly-out");
+        }
+    })
+}, {
+    rootMargin: "0px",
+    threshold: [0, 0.1, 1]
+});
+
+const flyInRightTags = document.querySelectorAll('.fly-in-right');
+flyInRightTags.forEach((tag) => {
+    flyInRightObserver.observe(tag);
+})
+
+//Fly in from left animation observer
+const flyInLeftObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("in-view-fly-left");
+            entry.target.classList.remove("not-in-view-fly-out");
+        } else {
+            entry.target.classList.remove("in-view-fly-left");
+            entry.target.classList.add("not-in-view-fly-out");
+        }
+    })
+}, {
+    rootMargin: "0px",
+    threshold: [0, 0.1, 1]
+});
+
+const flyInLeftTags = document.querySelectorAll('.fly-in-left');
+flyInLeftTags.forEach((tag) => {
+    flyInLeftObserver.observe(tag);
+})
+
+//Typewriter animation
+setInterval(() => {
+    const randomWord = pickWord(wordBank);
+    console.log(randomWord);
+    typewriter(typingBox, randomWord);
+}, 5000)

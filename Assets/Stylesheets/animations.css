@@ -36,8 +36,30 @@
         transform: translate(0, 0);
     }
     100% {
-        opacity: 0;
         transform: translate(0, -100%);
+        opacity: 0;
+    }
+}
+
+@keyframes intersection-fly-in-right {
+    0% {
+        opacity: 0;
+        transform: translate(-100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes intersection-fly-in-left {
+    0% {
+        opacity: 0;
+        transform: translate(100%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
     }
 }
 
@@ -48,7 +70,14 @@
 
 .not-in-view-fly-out {
     animation: intersection-fade-out 1s both;
-    
+}
+
+.in-view-fly-right {
+    animation: intersection-fly-in-right 1s both;
+}
+
+.in-view-fly-left {
+    animation: intersection-fly-in-left 1s both;
 }
 
 @keyframes cursor-blink {
