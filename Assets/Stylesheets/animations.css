@@ -30,17 +30,6 @@
     }
 }
 
-@keyframes intersection-fade-out {
-    0% {
-        opacity: 1;
-        transform: translate(0, 0);
-    }
-    100% {
-        transform: translate(0, -100%);
-        opacity: 0;
-    }
-}
-
 @keyframes intersection-fly-in-right {
     0% {
         opacity: 0;
@@ -69,7 +58,7 @@
 }
 
 .not-in-view-fly-out {
-    animation: intersection-fade-out 1s both;
+    opacity: 0;
 }
 
 .in-view-fly-right {
@@ -87,4 +76,21 @@
     50% {
         background-color: white;
     }
+}
+
+/* Misc Helper Classes for delaying animations */
+.delay-200 {
+    animation-delay: 200ms;
+}
+
+.delay-300 {
+    animation-delay: 300ms;
+}
+
+.delay-400 {
+    animation-delay: 400ms;
+}
+
+.delay-500 {
+    animation-delay: 500ms;
 }
