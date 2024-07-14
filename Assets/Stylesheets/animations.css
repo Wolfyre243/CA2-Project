@@ -30,13 +30,25 @@
     }
 }
 
-/* Fly-in Animations */
-.in-view {
-    animation: intersection-fade-in 1s 0.2s both;
+@keyframes intersection-fade-out {
+    0% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate(0, -100%);
+    }
 }
 
-.not-in-view {
-    opacity: 0;
+/* Fly-in Animations */
+.in-view-fly-in {
+    animation: intersection-fade-in 1s both;
+}
+
+.not-in-view-fly-out {
+    animation: intersection-fade-out 1s both;
+    
 }
 
 @keyframes cursor-blink {
@@ -44,6 +56,6 @@
         background-color: transparent;
     }
     50% {
-        background-color: black;
+        background-color: white;
     }
 }

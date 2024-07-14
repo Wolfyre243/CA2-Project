@@ -8,6 +8,18 @@
 
 /* 1. Introductory Section */
 
+#sticky-nav {
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+}
+
 #cursor {
     animation: cursor-blink 0.5s step-end infinite;
+}
+
+#intro-section {
+    background: linear-gradient(180deg, rgba(220,53,69,1) 0%, rgba(255,114,86,1) 64%, rgba(255,110,123,1) 100%);
+}
+
+#intro-mark {
+    color: rgba(255, 255, 255, 0.1);
 }

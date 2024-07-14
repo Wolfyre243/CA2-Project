@@ -30,23 +30,3 @@ document.addEventListener('scroll', () => {
         heroStart.disabled = false;
     }
 });
-
-const fadeInObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("in-view");
-            entry.target.classList.remove("not-in-view");
-        } else {
-            entry.target.classList.remove("in-view");
-            entry.target.classList.add("not-in-view");
-        }
-    })
-}, {
-    rootMargin: "0px",
-    threshold: [0, 0.1, 1]
-});
-
-const tags = document.querySelectorAll('.fly-in');
-tags.forEach((tag) => {
-    fadeInObserver.observe(tag);
-})

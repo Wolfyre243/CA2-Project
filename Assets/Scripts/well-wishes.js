@@ -5,18 +5,16 @@ const wordBank = ["happy", "cool", "awesome", "amazing"];
 let randomIndex = 0;
 
 //Functions
-async function typewriter(element, text, index = 0) {
+function typewriter(element, text, index = 0) {
     
     console.log("typing"); //debugging
     
-    if (index === 0) {
-        element.textContent = "";
-    } else if (index === text.length) {
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                resolve("finished typing");
-            }, 1000);
-        });
+    if (index === text.length) {
+        return;
+        /*new Promise((resolve) => {
+            console.log("finished typing")
+            resolve("finished typing");
+        });*/
     }
 
     element.textContent = text.substring(0, index + 1);
@@ -27,15 +25,17 @@ async function typewriter(element, text, index = 0) {
     
 }
 
-async function typewriterClear(element, text, index = text.length - 1) {
+function typewriterClear(element, text, index = text.length - 1) {
     console.log("removing"); //debugging
     
     if (element.textContent === "") {
-        return new Promise((resolve) => {
+        return;
+        /*new Promise((resolve) => {
             setTimeout(() => {
+                console.log("finished removing");
                 resolve("finished removing");
             }, 1000);
-        });
+        });*/
     }
 
     element.innerHTML = text.substring(0, index - 1);
@@ -57,21 +57,23 @@ const typingObserver = new IntersectionObserver((entries) => {
             setInterval(async function () {
                 const randomWord = pickWord(wordBank);
                 console.log(randomWord);
-                const typing = await typewriter(typingBox, randomWord)
-                    .then(async () => {
-                        return new Promise((resolve) => {
-                            setTimeout(() => {
-                                console.log("cooldown");
-                                resolve("cooldown finished");
-                            }, 3000)
-                        })
-                    })
-                    .then(() => typewriterClear(typingBox, randomWord));
+                typewriter(typingBox, randomWord);
 
+                //cooldown
+                await new Promise(r => {
+                    setTimeout(() => {
+                        r(2);
+                    }, 3000);
+                })
+
+                typewriterClear(typingBox, randomWord);
+                /*
+                setTimeout(() => {
+                    typewriterClear(typingBox, randomWord);
+                }, 3000);
+                */
             }, 5000);
         }
-            
-        
     })
 }, {
     rootMargin: "0px",
