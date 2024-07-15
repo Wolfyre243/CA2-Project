@@ -26,6 +26,7 @@ const pickWord = (arr) => {
 
 //-----------------------------Observers----------------------------------
 //Fly in animation observer
+
 const flyInObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
