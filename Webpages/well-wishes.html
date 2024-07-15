@@ -58,10 +58,37 @@
     </div>
 
     <!--Collapsing Comments-->
-    <div class="container-fluid row p-0 w-100 vh-100 m-auto mt-5 overflow-hidden">
+    <div class="container-fluid row p-0 w-100 m-auto mt-5 overflow-hidden" style="height: 125vh;">
         <!--Visible vertically on xxl, horizontally on lg, shifted below on md-->
-        <div class="col-xxl-4 col-md-12 d-none d-md-flex flex-xxl-column flex-lg-row justify-content-evenly justify-content-xl-between">
-            <div class="card mx-2 fly-in-right">
+        <div class="col-xxl-4 col-md-12 d-none d-md-flex flex-xxl-column flex-lg-row align-items-end justify-content-evenly justify-content-xl-between">
+            <div class="card mx-2 fly-in-right" style="height: fit-content;">
+                <div class="card-body">
+                    <div class="mb-3 d-flex flex-row">
+                        <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
+                        <p class="m-auto mx-2">Bueno. says...</p>
+                    </div>
+                    <h5 class="card-title">SP has an amazing environment!</h5>
+                    <p class="card-text">I love the facilities here in SP, especially the classrooms! They are just so clean and new, setting the perfect environment for studying</p>
+                    <p style="font-size: 0.8rem; color: gray;">6:35 PM | 18 December 2024</p>
+                </div>
+                
+                <div class="card-footer d-flex flex-row">
+                    
+                    <div class="container d-flex flex-row">
+                        <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                        <p>18</p>
+                    </div>
+                    <div class="container d-flex flex-row">
+                        <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                        <p>18</p>
+                    </div>
+                    <div class="container d-flex flex-row">
+                        <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                        <p>18</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card mx-2 fly-in-right delay-200" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
                         <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
@@ -74,7 +101,7 @@
                     put comment, like and retweet icons here
                 </div>
             </div>
-            <div class="card mx-2 fly-in-right delay-200">
+            <div class="card mx-2 fly-in-right delay-300" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
                         <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
@@ -87,7 +114,7 @@
                     put comment, like and retweet icons here
                 </div>
             </div>
-            <div class="card mx-2 fly-in-right delay-300">
+            <div class="card mx-2 fly-in-right d-none d-xl-flex delay-400" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
                         <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
@@ -100,20 +127,7 @@
                     put comment, like and retweet icons here
                 </div>
             </div>
-            <div class="card mx-2 fly-in-right d-none d-xl-flex delay-400">
-                <div class="card-body">
-                    <div class="mb-3 d-flex flex-row">
-                        <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
-                        <p class="m-auto mx-2">randomBanana says...</p>
-                    </div>
-                    <h5 class="card-title">SP has an amazing environment!</h5>
-                    <p class="card-text">I love the facilities here in SP, especially the classrooms! They are just so clean and new, setting the perfect environment for studying</p>
-                </div>
-                <div class="card-footer">
-                    put comment, like and retweet icons here
-                </div>
-            </div>
-            <div class="card mx-2 fly-in-right d-none d-xl-flex delay-500">
+            <div class="card mx-2 fly-in-right d-none d-xl-flex delay-500" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
                         <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
@@ -127,8 +141,8 @@
                 </div>
             </div>
         </div>
-        <div class="col d-flex flex-column">
-            <h1 class="m-auto text-center text-white">Over the years, SP has gathered a large crowd of alumni</h1>
+        <div class="col d-flex flex-column mt-5 mb-5">
+            <h1 class="m-auto text-center text-white fly-in">Over the years, SP has gathered a large crowd of alumni</h1>
         </div>
         <div class="col-xxl-4 col-md-12 d-none d-md-flex flex-xxl-column flex-lg-row justify-content-evenly justify-content-xl-between">
             <div class="card fly-in-left">
@@ -364,7 +378,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6 d-flex">
-                <h1 class="m-auto text-center">You've heard their thoughts, now its your turn!</h1>
+                <h1 class="m-auto text-center fly-in">You've heard their thoughts, now its your turn!</h1>
             </div>
             <div class="col-3 d-none d-lg-inline">
                 <div class="card fly-in-left">

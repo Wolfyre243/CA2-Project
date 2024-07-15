@@ -1,8 +1,8 @@
 //------------------------------Variables-------------------------------------
 let typingBox = document.getElementById('typing-box');
 
-const wordBank = ["happy", "cool", "awesome", "amazing"];
-let randomIndex = 0;
+const wordBank = ["happy", "cool", "awesome", "amazing", "beautiful", "majestic", "my home", "nice"];
+let prevIndex = -1;
 
 //------------------------------Functions---------------------------------------
 function typewriter(element, text, i = 0) {
@@ -20,8 +20,12 @@ function typewriter(element, text, i = 0) {
 }
 
 const pickWord = (arr) => {
-    randomIndex = Math.floor(Math.random() * arr.length);
-    return arr[randomIndex];
+    if (prevIndex == arr.length - 1) {
+        prevIndex = 0;
+    } else {
+        prevIndex++;
+    }
+    return arr[prevIndex];
 }
 
 //-----------------------------Observers----------------------------------

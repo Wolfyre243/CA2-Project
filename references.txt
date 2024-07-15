@@ -7,6 +7,7 @@ Contents:
 - A. Infinite Gallery (Hero Section)
 - B. Timeline
 
+2. Icons
 
 ----------------------------------------------------------------------------------------------
 1A Infinite Gallery (Hero Section):
@@ -25,3 +26,8 @@ Contents:
 "sp-grads.jpg" taken from https://www.sp.edu.sg/industry/span/stayingconnected
 "sp-library.jpg" taken from https://www.flickr.com/photos/66161322@N04/6024748614
 
+-----------------------------------------------------------------------------------------------
+2. Icons
+
+"comment-icon.png" taken from Flaticon, by onlyhasbi
+"heart-icon.png" taken from Flaticon, by Vlad Szirka
