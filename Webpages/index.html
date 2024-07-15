@@ -50,7 +50,7 @@
 
     <div id="hero-section" class="container-fluid p-0 d-flex flex-column">
         <div id="hero-start" class="container-fluid p-0 bg-black">
-            <div id="gallery" class="container-fluid p-0 overflow-hidden bg-black position-fixed top-50 start-50 translate-middle">
+            <div id="gallery" class="container-fluid p-0 overflow-hidden bg-black position-absolute top-50 start-50 translate-middle">
                 <div id="img-gallery-1" class="p-1">
                     <img src="../Assets/Images/infinite-gallery-r1/about-sp_1.jpg" alt="">
                     <img src="../Assets/Images/infinite-gallery-r1/sp-aerial-view.jpg" alt="">
@@ -85,7 +85,7 @@
                 
             </div>
             
-            <div style="height: 100vh;" class="container-fluid w-100 bg-black opacity-50 position-fixed top-50 start-50 translate-middle"></div>
+            <div style="height: 100vh;" class="container-fluid w-100 bg-black opacity-50 position-absolute top-50 start-50 translate-middle"></div>
 
             <h1 id="hero-header" class="text-center position-fixed top-50 start-50 translate-middle">SP70</h1>
             
@@ -114,81 +114,88 @@
         </div>
     </div>
 
-    <div class="container-fluid p-0 flex-column">
-        <div class="bg-danger vh-25">
-            &nbsp;
-        </div>
-        <!--Timeline Carousel-->
-        <div class="container-fluid p-0 flex-column d-flex vh-100">
-            <div class="carousel slide h-100" id="timeline-carousel" data-bs-ride="carousel">
-                <div id="timeline-controls" class="row w-75 bg-danger position-absolute bottom-0 start-50 translate-middle-x z-3 justify-content-between d-none d-lg-flex fly-in" style="height: 1vh; margin-bottom: 6%;">
-                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="0" class="active col-2 rounded-circle ratio ratio-1x1 top-50 translate-middle-y border border-5 border-danger timeline-button" style="width: 3vw; height: 3vw; margin-left: -1%;" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="1" class="col-2 rounded-circle ratio ratio-1x1 top-50 translate-middle-y border border-5 border-danger timeline-button" style="width: 3vw; height: 3vw;" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="2" class="col-2 rounded-circle ratio ratio-1x1 top-50 translate-middle-y border border-5 border-danger timeline-button" style="width: 3vw; height: 3vw; margin-right: -1%;" aria-label="Slide 3"></button>
+    
+    <div class="bg-danger" style="height: 5vh;">
+        &nbsp;
+    </div>
+
+    <!--Timeline-->
+    <div id="timeline" class="container-fluid d-flex flex-column p-0 w-100" style="height: fit-content;">
+        <!--Timeline line
+        <div class="position-absolute float-start top-0 z-3" style="width: 0.5vh; height: 500vh; left: 10%; background: rgb(207, 207, 207);"></div>
+        -->
+        <div class="vh-100 d-flex flex-row text-white" style="background: linear-gradient(180deg, rgba(220,53,69,0.8) 0%, rgba(255,114,86,0.6) 64%, rgba(255,110,123,0.4) 100%) fixed no-repeat, url(../Assets/Images/infinite-gallery-r1/old-sp_2-1960s.jpg) center/cover no-repeat;">
+            <div class="position-relative top-0 z-3 d-flex flex-column justify-content-center align-items-center bg-white timeline-flow" style="width: 0.5vh; height: 100%; left: 15%;">
+                <div class="rounded-circle fly-in d-flex align-items-center bg-white" style="width: 35px; height: 35px; animation-delay: 300ms;">
+                    <h1 class="position-relative d-none d-lg-flex" style="left: -100px;">1970</h1>
                 </div>
-                <div class="carousel-inner h-100">
-                    <div id="time-carousel-item1" class="carousel-item active bg-black" style="min-height: 100vh;">
-                        
-                    </div>
-                    <div id="time-carousel-item2" class="carousel-item" style="min-height: 100vh;">
-                        
-                    </div>
-                    <div id="time-carousel-item3" class="carousel-item" style="min-height: 100vh;">
-                        
-                    </div>
-                </div>
-                <div class="h-75 bg-danger position-absolute top-0 end-0 translate-middle-x z-3 justify-content-between d-flex flex-column d-lg-none mx-3" style="width: 1vw; margin-top: 25%;">
-                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="0" class="active rounded-circle ratio ratio-1x1 start-50 translate-middle-x border border-5 border-danger timeline-button" style="width: 3vh; height: 3vh; margin-top: -1%;" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="1" class="rounded-circle ratio ratio-1x1 start-50 translate-middle-x border border-5 border-danger timeline-button" style="width: 3vh; height: 3vh;" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#timeline-carousel" data-bs-slide-to="2" class="rounded-circle ratio ratio-1x1 start-50 translate-middle-x border border-5 border-danger timeline-button" style="width: 3vh; height: 3vh; margin-bottom: -1%;" aria-label="Slide 3"></button>
-                </div>
-                
+            </div>
+            <div class="m-auto w-50 card bg-transparent border-0 text-white fly-in">
+                <h3 class="border-bottom border-2 d-flex d-lg-none">1970</h3>
+                <h1 class="my-2">SP was founded</h1>
+                <p>bla bla bla bla bla bla bla bla</p>
             </div>
         </div>
-        <!--Statistic Cards-->
-        <div id="statistic-cards" class="container-fluid p-0 row vh-100 w-100 m-auto">
-            <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
-                <div class="card m-auto w-100 fly-in">
-                    <div class="card-header">
-                        Graduates
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-body">Card Title</h5>
-                        <p class="card-text">Blah blah blah</p>
-                    </div>
+
+        <div class="vh-100 d-flex flex-row text-white" style="background: linear-gradient(180deg, rgba(220,53,69,0.8) 0%, rgba(255,114,86,0.6) 64%, rgba(255,110,123,0.4) 100%) fixed no-repeat, url(../Assets/Images/infinite-gallery-r1/old-sp_2-1960s.jpg) center/cover no-repeat;">
+            <div class="position-relative top-0 z-3 d-flex flex-column justify-content-center align-items-center bg-white timeline-flow" style="width: 0.5vh; height: 100%; left: 15%;">
+                <div class="rounded-circle fly-in d-flex align-items-center bg-white" style="width: 35px; height: 35px; animation-delay: 300ms;">
+                    <h1 class="position-relative d-none d-lg-flex" style="left: -100px;">1980</h1>
                 </div>
             </div>
-            <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
-                <div class="card m-auto w-100 fly-in" style="animation-delay: 200ms;">
-                    <div class="card-header">
-                        Graduates
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-body">Card Title</h5>
-                        <p class="card-text">Blah blah blah</p>
-                    </div>
+            <div class="m-auto w-50 card bg-transparent border-0 text-white fly-in">
+                <h3 class="border-bottom border-2 d-flex d-lg-none">1980</h3>
+                <h1 class="my-2">SP was founded</h1>
+                <p>bla bla bla bla bla bla bla bla</p>
+            </div>
+        </div>
+    </div>
+       
+    
+
+     <!--Statistic Cards-->
+     <div id="statistic-cards" class="container-fluid p-0 row vh-100 w-100 m-auto">
+        <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
+            <div class="card m-auto w-100 fly-in">
+                <div class="card-header">
+                    Graduates
+                </div>
+                <div class="card-body">
+                    <h5 class="card-body">Card Title</h5>
+                    <p class="card-text">Blah blah blah</p>
                 </div>
             </div>
-            <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
-                <div class="card m-auto w-100 fly-in" style="animation-delay: 300ms;">
-                    <div class="card-header">
-                        Graduates
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-body">Card Title</h5>
-                        <p class="card-text">Blah blah blah</p>
-                    </div>
+        </div>
+        <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
+            <div class="card m-auto w-100 fly-in" style="animation-delay: 200ms;">
+                <div class="card-header">
+                    Graduates
+                </div>
+                <div class="card-body">
+                    <h5 class="card-body">Card Title</h5>
+                    <p class="card-text">Blah blah blah</p>
                 </div>
             </div>
-            <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
-                <div class="card m-auto w-100 fly-in" style="animation-delay: 400ms;">
-                    <div class="card-header">
-                        Graduates
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-body">Card Title</h5>
-                        <p class="card-text">Blah blah blah</p>
-                    </div>
+        </div>
+        <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
+            <div class="card m-auto w-100 fly-in" style="animation-delay: 300ms;">
+                <div class="card-header">
+                    Graduates
+                </div>
+                <div class="card-body">
+                    <h5 class="card-body">Card Title</h5>
+                    <p class="card-text">Blah blah blah</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
+            <div class="card m-auto w-100 fly-in" style="animation-delay: 400ms;">
+                <div class="card-header">
+                    Graduates
+                </div>
+                <div class="card-body">
+                    <h5 class="card-body">Card Title</h5>
+                    <p class="card-text">Blah blah blah</p>
                 </div>
             </div>
         </div>
