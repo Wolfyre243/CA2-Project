@@ -1,0 +1,21 @@
+#comp-eng:before {
+    margin-left: -5%;
+    content: "COMPUTER";
+    color: rgb(77, 82, 85);
+    font-size: 60vh;
+    position: absolute; 
+    top: -25vh; 
+    left: 0; 
+    z-index: -1;
+}
+
+#comp-eng:after {
+    margin-left: -3%;
+    content: "ENGINEERING";
+    color: rgb(77, 82, 85);
+    font-size: 60vh;
+    position: absolute; 
+    bottom: -15vh; 
+    left: 0; 
+    z-index: -1;
+}
