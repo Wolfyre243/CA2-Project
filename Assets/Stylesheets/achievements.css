@@ -21,8 +21,7 @@
     animation-delay: 1000ms;
 }
 
-.bento {
-    display: grid;
-    grid-template-rows: 1fr, 1fr, 1fr;
-    grid-template-columns: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+.white-glow {
+    
+    box-shadow: 0px 0px 50px rgba(0,31,78,0.3);
 }
