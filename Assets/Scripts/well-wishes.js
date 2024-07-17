@@ -46,7 +46,7 @@ window.addEventListener('scroll', function() {
     document.querySelector('.navbar').classList.remove('navbar-show');
     setTimeout(() => {
         document.querySelector('.navbar').classList.remove('sticky-top');
-    }, 200)
+    }, 600)
     
     
   }

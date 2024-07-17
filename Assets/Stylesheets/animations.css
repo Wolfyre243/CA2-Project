@@ -135,7 +135,7 @@
 }
 
 .navbar-hide {
-    animation: scroll-navbar-hide 1s both;
+    animation: scroll-navbar-hide 0.5s both;
 }
 
 .in-view-bento-bg::after, .in-view-bento-bg::before {
