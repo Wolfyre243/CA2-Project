@@ -89,6 +89,26 @@
     }
 }
 
+@keyframes scroll-navbar-show {
+    0% {
+        transform: translateY(-20%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scroll-navbar-hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 /* Fly-in Animations */
 .in-view-fly-in {
     animation: intersection-fade-in 1s both;
@@ -108,6 +128,14 @@
 
 .in-view-timeline {
     animation: intersection-expand 1s 0.1s both;
+}
+
+.navbar-show {
+    animation: scroll-navbar-show 1s both;
+}
+
+.navbar-hide {
+    animation: scroll-navbar-hide 1s both;
 }
 
 .in-view-bento-bg::after, .in-view-bento-bg::before {

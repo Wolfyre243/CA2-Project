@@ -29,5 +29,6 @@ Contents:
 -----------------------------------------------------------------------------------------------
 2. Icons
 
-"comment-icon.png" taken from Flaticon, by onlyhasbi
+"comment-icon.png" taken from Flaticon, by Arkinasi
 "heart-icon.png" taken from Flaticon, by Vlad Szirka
+"share-icon.png" taken from Flaticon, by Freepik

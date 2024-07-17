@@ -28,6 +28,34 @@ const pickWord = (arr) => {
     return arr[prevIndex];
 }
 
+// keep track of previous scroll position
+let prevScrollPos = window.scrollY;
+
+window.addEventListener('scroll', function() {
+  // current scroll position
+  const currentScrollPos = window.scrollY;
+
+  if (prevScrollPos > currentScrollPos) {
+    // user has scrolled up
+    document.querySelector('.navbar').classList.add('navbar-show');
+    document.querySelector('.navbar').classList.add('sticky-top');
+    document.querySelector('.navbar').classList.remove('navbar-hide');
+  } else {
+    // user has scrolled down
+    document.querySelector('.navbar').classList.add('navbar-hide');
+    document.querySelector('.navbar').classList.remove('navbar-show');
+    setTimeout(() => {
+        document.querySelector('.navbar').classList.remove('sticky-top');
+    }, 200)
+    
+    
+  }
+
+  // update previous scroll position
+  prevScrollPos = currentScrollPos;
+
+});
+
 //-----------------------------Observers----------------------------------
 //Fly in animation observer
 
