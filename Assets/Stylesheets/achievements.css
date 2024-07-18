@@ -1,4 +1,4 @@
-#comp-eng:before {
+#comp-eng::before {
     margin-left: -5%;
     content: "COMPUTER";
     color: rgb(77, 82, 85);
@@ -9,7 +9,7 @@
     z-index: -1;
 }
 
-#comp-eng:after {
+#comp-eng::after {
     margin-left: -3%;
     content: "ENGINEERING";
     color: rgb(77, 82, 85);
@@ -22,6 +22,5 @@
 }
 
 .white-glow {
-    
     box-shadow: 0px 0px 50px rgba(0,31,78,0.3);
 }
