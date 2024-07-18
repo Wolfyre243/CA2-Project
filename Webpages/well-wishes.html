@@ -58,10 +58,10 @@
     </div>
 
     <!--Collapsing Comments-->
-    <div class="container-fluid row p-0 w-100 m-auto mt-5 overflow-hidden" style="height: 125vh;">
+    <div class="container-fluid row p-0 w-100 m-auto mt-5 overflow-hidden" style="height: fit-content;">
         <!--Visible vertically on xxl, horizontally on lg, shifted below on md-->
-        <div class="col-xxl-4 col-md-12 d-none d-md-flex flex-xxl-column flex-lg-row align-items-end justify-content-evenly justify-content-xl-between">
-            <div class="card mx-2 fly-in-right" style="height: fit-content;">
+        <div class="col-xxl-4 col-md-12 d-none d-md-flex flex-xxl-column flex-lg-row align-items-end justify-content-evenly justify-content-xl-between" style="height: fit-content;">
+            <div class="card mx-2 mb-2 fly-in-right" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
                         <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
@@ -73,7 +73,6 @@
                 </div>
                 
                 <div class="card-footer d-flex flex-row align-items-center">
-                    
                     <div class="container d-flex flex-row align-items-center">
                         <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
                         <p class="m-auto ms-1">4</p>
@@ -88,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="card mx-2 fly-in-right delay-200" style="height: fit-content;">
+            <div class="card mx-2 mb-2 fly-in-right delay-200" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
                         <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
@@ -101,7 +100,7 @@
                     put comment, like and retweet icons here
                 </div>
             </div>
-            <div class="card mx-2 fly-in-right delay-300" style="height: fit-content;">
+            <div class="card mx-2 mb-2 fly-in-right delay-300" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
                         <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
@@ -114,7 +113,7 @@
                     put comment, like and retweet icons here
                 </div>
             </div>
-            <div class="card mx-2 fly-in-right d-none d-xl-flex delay-400" style="height: fit-content;">
+            <div class="card mx-2 mb-2 fly-in-right d-none d-xl-flex delay-400" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
                         <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
@@ -127,7 +126,7 @@
                     put comment, like and retweet icons here
                 </div>
             </div>
-            <div class="card mx-2 fly-in-right d-none d-xl-flex delay-500" style="height: fit-content;">
+            <div class="card mx-2 mb-2 fly-in-right d-none d-xl-flex delay-500" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
                         <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
@@ -431,9 +430,43 @@
         
     </div>
 
-    <div class="vh-100 mt-5 container-fluid w-100 d-flex flex-column">
-        <h1 class="m-auto">Submit your well wishes!</h1>
-        <div class="m-auto">put the form here</div>
+    <div class="vh-100 mt-5 m-auto col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center text-white">
+        <h1 class="mb-5">Submit your well wishes!</h1>
+        <div class="container">
+            <form>
+
+                <div class="position-relative w-75 m-auto mb-3 d-flex flex-row justify-content-between form-progress">
+                    <button id="step-1" class="progress-step text-white"></button>
+                    <button id="step-2" class="progress-step text-white"></button>
+                    <button id="step-3" class="progress-step text-white"></button>
+                    <button id="step-4" class="progress-step text-white"></button>
+                </div>
+
+                <div id="form-step-1" class="form-step active-step">
+                    <div class="mb-3">
+                        <label for="userEmail" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="userEmail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="userName" class="form-label">Name address</label>
+                        <input type="email" class="form-control" id="userName">
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <a href="#" class="btn btn-primary">Next</a>
+                    </div>
+                </div>
+                <div id="form-step-1" class="form-step">
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <a href="#" class="btn btn-primary me-5">Previous</a>
+                        <a href="#" class="btn btn-primary ms-5">Next</a>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
 
 

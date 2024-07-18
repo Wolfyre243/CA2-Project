@@ -23,3 +23,40 @@ body {
 #intro-mark {
     color: rgba(255, 255, 255, 0.1);
 }
+
+.progress-step {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(360deg, rgba(220,53,69,1) 0%, rgba(255,114,86,1) 64%, rgba(255,110,123,1) 100%) fixed no-repeat;
+    box-shadow: 0px 0px 50px rgba(104, 104, 104, 0.2);
+    z-index: 2;
+}
+
+.progress-step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.form-progress::before {
+    content: "";
+    counter-reset: step;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 100%;
+    background-color: white;
+}
+
+.form-step {
+    display: none;
+}
+
+.form-step.active-step {
+    display: block;
+}
