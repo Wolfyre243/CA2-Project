@@ -1,6 +1,16 @@
 //------------------------------Variables-------------------------------------
 let typingBox = document.getElementById('typing-box');
 
+let formButton1 = document.getElementById("step-1");
+let formButton2 = document.getElementById("step-2");
+let formButton3 = document.getElementById("step-3");
+
+let form1 = document.getElementById("form-step-1");
+let form2 = document.getElementById("form-step-2");
+let form3 = document.getElementById("form-step-3");
+
+let formProgressBar = document.getElementById("form-progress-bar");
+
 const wordBank = ["happy", "cool", "awesome", "amazing", "beautiful", "majestic", "my home", "nice"];
 let prevIndex = -1;
 
@@ -28,6 +38,42 @@ const pickWord = (arr) => {
     return arr[prevIndex];
 }
 
+const swapto1 = () => {
+    formButton1.classList.add('active-button');
+    formButton2.classList.remove('active-button');
+    formButton3.classList.remove('active-button');
+
+    form1.classList.add('active-step');
+    form2.classList.remove('active-step');
+    form3.classList.remove('active-step');
+
+    formProgressBar.style.width = "0%";
+}
+
+const swapto2 = () => {
+    formButton1.classList.remove('active-button');
+    formButton2.classList.add('active-button');
+    formButton3.classList.remove('active-button');
+
+    form1.classList.remove('active-step');
+    form2.classList.add('active-step');
+    form3.classList.remove('active-step');
+
+    formProgressBar.style.width = "50%";
+}
+
+const swapto3 = () => {
+    formButton1.classList.remove('active-button');
+    formButton2.classList.remove('active-button');
+    formButton3.classList.add('active-button');
+    
+    form1.classList.remove('active-step');
+    form2.classList.remove('active-step');
+    form3.classList.add('active-step');
+
+    formProgressBar.style.width = "100%";
+}
+
 // keep track of previous scroll position
 let prevScrollPos = window.scrollY;
 
@@ -38,15 +84,15 @@ window.addEventListener('scroll', function() {
   if (prevScrollPos > currentScrollPos) {
     // user has scrolled up
     document.querySelector('.navbar').classList.add('navbar-show');
-    document.querySelector('.navbar').classList.add('sticky-top');
+    document.querySelector('.navbar').classList.add('sticky-lg-top');
     document.querySelector('.navbar').classList.remove('navbar-hide');
   } else {
     // user has scrolled down
     document.querySelector('.navbar').classList.add('navbar-hide');
     document.querySelector('.navbar').classList.remove('navbar-show');
     setTimeout(() => {
-        document.querySelector('.navbar').classList.remove('sticky-top');
-    }, 600)
+        document.querySelector('.navbar').classList.remove('sticky-lg-top');
+    }, 100)
     
     
   }
@@ -127,3 +173,17 @@ setInterval(() => {
     console.log(randomWord);
     typewriter(typingBox, randomWord);
 }, 5000)
+
+// Button Event Listeners
+
+formButton1.addEventListener('click', () => {
+    swapto1();
+})
+
+formButton2.addEventListener('click', () => {
+    swapto2();
+})
+
+formButton3.addEventListener('click', () => {
+    swapto3();
+})
