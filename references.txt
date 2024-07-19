@@ -7,7 +7,9 @@ Contents:
 - A. Infinite Gallery (Hero Section)
 - B. Timeline
 
-2. Icons
+2. Icons/Logos
+
+3. Content References
 
 ----------------------------------------------------------------------------------------------
 1A Infinite Gallery (Hero Section):
@@ -26,6 +28,9 @@ Contents:
 "sp-grads.jpg" taken from https://www.sp.edu.sg/industry/span/stayingconnected
 "sp-library.jpg" taken from https://www.flickr.com/photos/66161322@N04/6024748614
 
+1B Timeline:
+
+
 -----------------------------------------------------------------------------------------------
 2. Icons
 
@@ -34,5 +39,22 @@ Contents:
 "share-icon.png" taken from Flaticon, by Freepik
 "straight-quotes.png" taken from Flaticon, by Freepik
 "microchip-icon.png" taken from Flaticon, by Freepik
+"technology-1-icon.png" taken from Flaticon, by zero_wing
+"star-icon.png" taken from Flaticon, by Pixel Perfect
+"commservice-icon.png" taken from Flaticon, by DinosoftLabs
+"intern-icon.png" taken from Flaticon, by Freepik
 
-3. Backdrops
+
+"lky-award.png" taken from Flaticon, by imaginationlol
+"OCBC-logo.png" taken from https://companieslogo.com/ocbc-bank/logo/
+"DELL-award.png" taken from https://resources.ripplematch.com/dell-technologies-campus-forward-award-winner-2022
+"I2R-building.png" taken from https://search.rsc.a-star.edu.sg/institutes/i2r
+
+
+
+3. Achievement Pictures
+"food-from-the-heart.png" taken from https://www.aasingapore.com/events-1/volunteer-aas-at-food-from-the-heart
+"jotham-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/jotham-hoe
+
+4. Content References
+Jotham Hoe's story: https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/jotham-hoe

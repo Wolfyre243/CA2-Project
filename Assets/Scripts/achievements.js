@@ -31,7 +31,7 @@ const flyInObserver = new IntersectionObserver((entries) => {
     })
 }, {
     rootMargin: "0px",
-    threshold: 0.2
+    threshold: [0, 0.1, 1]
 });
 
 const flyInTags = document.querySelectorAll('.fly-in');

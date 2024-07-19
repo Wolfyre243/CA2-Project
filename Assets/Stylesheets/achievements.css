@@ -18,7 +18,7 @@
     bottom: -15vh; 
     left: 0; 
     z-index: -1;
-    animation-delay: 1000ms;
+    animation-delay: 300ms;
 }
 
 .white-glow {

@@ -139,7 +139,7 @@
 }
 
 .in-view-bento-bg::after, .in-view-bento-bg::before {
-    animation: intersection-bento-bg 3.5s 0.3s ease-out both;
+    animation: intersection-bento-bg 2s 0.1s ease-out both;
 }
 
 .not-in-view-bento-bg::after, .not-in-view-bento-bg::before {
