@@ -49,12 +49,24 @@ Contents:
 "OCBC-logo.png" taken from https://companieslogo.com/ocbc-bank/logo/
 "DELL-award.png" taken from https://resources.ripplematch.com/dell-technologies-campus-forward-award-winner-2022
 "I2R-building.png" taken from https://search.rsc.a-star.edu.sg/institutes/i2r
-
+"ntu-logo.png" taken from https://goodtitevs.best/product_details/15568714.html
+"medal-icon.png" taken from Flaticon, by Handicon
+"MAD-logo.png" taken from https://www.youthharmony.sg/
+"mental-health-icon.png" taken from Flaticon, by Freepik
+"clapperboard-icon.png" taken from Flaticon, by Maxim Basinski Premium
+"paintbrush-icon.png" taken from Flaticon, by Freepik
+"yt-icon.webp" taken from https://www.vecteezy.com/free-png/youtube-logo
+"cameras-icon.png" taken from Flaticon, by Freepik
+"mental-health-2-icon.png" taken from Flaticon, by Freepik
+"SMU-logo.png" taken from https://www.drupal.org/singapore-management-university
 
 
 3. Achievement Pictures
 "food-from-the-heart.png" taken from https://www.aasingapore.com/events-1/volunteer-aas-at-food-from-the-heart
 "jotham-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/jotham-hoe
+"khenghoon-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/ng-kheng-hoon
+
 
 4. Content References
 Jotham Hoe's story: https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/jotham-hoe
+Ng Kheng Hoon's Story: https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/ng-kheng-hoon

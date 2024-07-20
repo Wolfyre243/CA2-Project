@@ -10,7 +10,7 @@ const typingObserver = new IntersectionObserver((entries) => {
     })
 }, {
     rootMargin: "0px",
-    threshold: 0.25
+    threshold: 0.3
 })
 
 const typingTags = document.querySelectorAll('.bento-bg');
@@ -31,7 +31,7 @@ const flyInObserver = new IntersectionObserver((entries) => {
     })
 }, {
     rootMargin: "0px",
-    threshold: [0, 0.1, 1]
+    threshold: [0, 0.2, 1]
 });
 
 const flyInTags = document.querySelectorAll('.fly-in');
@@ -52,7 +52,7 @@ const flyInRightObserver = new IntersectionObserver((entries) => {
     })
 }, {
     rootMargin: "0px",
-    threshold: [0, 0.1, 1]
+    threshold: [0, 0.2, 1]
 });
 
 const flyInRightTags = document.querySelectorAll('.fly-in-right');
@@ -73,7 +73,7 @@ const flyInLeftObserver = new IntersectionObserver((entries) => {
     })
 }, {
     rootMargin: "0px",
-    threshold: [0, 0.1, 1]
+    threshold: [0, 0.2, 1]
 });
 
 const flyInLeftTags = document.querySelectorAll('.fly-in-left');
