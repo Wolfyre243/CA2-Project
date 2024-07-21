@@ -7,12 +7,14 @@
 
     <!--CDNs-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
     <!--Stylesheets-->
     <link rel="stylesheet" href="../Assets/Stylesheets/animations.css"/>
     <link rel="stylesheet" href="../Assets/Stylesheets/well-wishes-style.css">
+
+    <script defer src="../Assets/Scripts/well-wishes.js"></script>
 
 </head>
 <body>
@@ -60,83 +62,154 @@
     <!--Collapsing Comments-->
     <div class="container-fluid row p-0 w-100 m-auto mt-5 overflow-hidden" style="height: fit-content;">
         <!--Visible vertically on xxl, horizontally on lg, shifted below on md-->
-        <div class="col-xxl-4 col-md-12 d-none d-md-flex flex-xxl-column flex-lg-row align-items-end justify-content-evenly justify-content-xl-between" style="height: fit-content;">
-            <div class="card mx-2 mb-2 fly-in-right" style="height: fit-content;">
+        <div class="col-xxl-4 col-md-12 d-none d-md-flex flex-xxl-column flex-lg-row align-items-baseline justify-content-evenly justify-content-xl-between" style="height: fit-content;">
+            
+            <!--This is a card. It holds a comment, and this will be the template.-->
+            <div class="card w-75 mx-2 mb-2 fly-in-right" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
-                        <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
-                        <p class="m-auto mx-2">Bueno. says...</p>
+                        <img src="../Assets/Images/pfps/default.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                        <p class="m-auto mx-2">Bueno.</p>
                     </div>
                     <h5 class="card-title">SP has an amazing environment!</h5>
-                    <p class="card-text">I love the facilities here in SP, especially the classrooms! They are just so clean and new, setting the perfect environment for studying</p>
-                    <p style="font-size: 0.8rem; color: gray;">6:35 PM | 18 December 2024</p>
+                    <p class="card-text">I love the state-of-art facilities here in SP! They are so clean and new, setting the perfect environment for studying!</p>
+                    <p style="font-size: 0.8rem; color: gray;">6:35 PM | 18 July 2024</p>
                 </div>
                 
-                <div class="card-footer d-flex flex-row align-items-center">
-                    <div class="container d-flex flex-row align-items-center">
+                <div class="card-footer d-flex flex-row">
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
                         <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
                         <p class="m-auto ms-1">4</p>
                     </div>
-                    <div class="container d-flex flex-row align-items-center">
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
                         <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
                         <p class="m-auto ms-1">21</p>
                     </div>
-                    <div class="container d-flex flex-row align-items-center">
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
                         <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
                         <p class="m-auto ms-1">3</p>
                     </div>
                 </div>
             </div>
-            <div class="card mx-2 mb-2 fly-in-right delay-200" style="height: fit-content;">
+
+            <div class="card mx-2 mb-2 fly-in-right" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
-                        <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
-                        <p class="m-auto mx-2">randomBanana says...</p>
+                        <img src="../Assets/Images/pfps/pigeon.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                        <p class="m-auto mx-2">wingedpigeon</p>
                     </div>
-                    <h5 class="card-title">SP has an amazing environment!</h5>
-                    <p class="card-text">I love the facilities here in SP, especially the classrooms! They are just so clean and new, setting the perfect environment for studying</p>
+                    <h5 class="card-title">Amazing food at SP!</h5>
+                    <p class="card-text">
+                        I'm always spoiled for choice whenever I'm at Food Court 3, and theres 5 other Food Courts!
+                        Trying out the delicacies at SP will surely take some time...
+                    </p>
+                    <p style="font-size: 0.8rem; color: gray;">3:45 PM | 17 June 2024</p>
                 </div>
-                <div class="card-footer">
-                    put comment, like and retweet icons here
+                
+                <div class="card-footer d-flex flex-row">
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">76</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">28</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                        <p class="m-auto ms-1">2</p>
+                    </div>
                 </div>
             </div>
-            <div class="card mx-2 mb-2 fly-in-right delay-300" style="height: fit-content;">
+
+
+            <div class="card w-75 mx-2 mb-2 fly-in-right" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
-                        <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
-                        <p class="m-auto mx-2">randomBanana says...</p>
+                        <img src="../Assets/Images/pfps/default.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                        <p class="m-auto mx-2">kyaniteAnt</p>
                     </div>
-                    <h5 class="card-title">SP has an amazing environment!</h5>
-                    <p class="card-text">I love the facilities here in SP, especially the classrooms! They are just so clean and new, setting the perfect environment for studying</p>
+                    <h5 class="card-title">Top-notch Education!</h5>
+                    <p class="card-text">
+                        The lecturers at SP provide an immersive learning experience, making lessons enjoyable and fun.
+                    </p>
+                    <p style="font-size: 0.8rem; color: gray;">9:03 PM | 22 June 2024</p>
                 </div>
-                <div class="card-footer">
-                    put comment, like and retweet icons here
+                
+                <div class="card-footer d-flex flex-row">
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">6</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">211</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                        <p class="m-auto ms-1">18</p>
+                    </div>
                 </div>
             </div>
-            <div class="card mx-2 mb-2 fly-in-right d-none d-xl-flex delay-400" style="height: fit-content;">
+            
+
+            <div class="card w-75 mx-2 mb-2 fly-in-right" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
-                        <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
-                        <p class="m-auto mx-2">randomBanana says...</p>
+                        <img src="../Assets/Images/pfps/sunset-pfp.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                        <p class="m-auto mx-2">SunnySideDown</p>
                     </div>
-                    <h5 class="card-title">SP has an amazing environment!</h5>
-                    <p class="card-text">I love the facilities here in SP, especially the classrooms! They are just so clean and new, setting the perfect environment for studying</p>
+                    <h5 class="card-title">Congrats SP!</h5>
+                    <p class="card-text">
+                        As an alumni of SP, I'm glad to see that SP has reached its 70th Anniversary!
+                    </p>
+                    <p style="font-size: 0.8rem; color: gray;">8:37 AM | 4 July 2024</p>
                 </div>
-                <div class="card-footer">
-                    put comment, like and retweet icons here
+                
+                <div class="card-footer d-flex flex-row">
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">9</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">71</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                        <p class="m-auto ms-1">10</p>
+                    </div>
                 </div>
             </div>
-            <div class="card mx-2 mb-2 fly-in-right d-none d-xl-flex delay-500" style="height: fit-content;">
+
+            
+            <div class="card mx-2 mb-2 fly-in-right" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
-                        <div class="bg-black" style="width: 40px; height: 40px;">pfp</div>
-                        <p class="m-auto mx-2">randomBanana says...</p>
+                        <img src="../Assets/Images/pfps/nightsky-pfp.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                        <p class="m-auto mx-2">Astronot</p>
                     </div>
-                    <h5 class="card-title">SP has an amazing environment!</h5>
-                    <p class="card-text">I love the facilities here in SP, especially the classrooms! They are just so clean and new, setting the perfect environment for studying</p>
+                    <h5 class="card-title">BEST AERO HUB!</h5>
+                    <p class="card-text">
+                        I absolutely love the Airbus A320 flight simulator in the Aero Hub! An exact replica of the Airbus A320
+                        cockpit, sitting inside it will make you feel like an actual pilot!
+                    </p>
+                    <p style="font-size: 0.8rem; color: gray;">6:52 AM | 9 July 2024</p>
                 </div>
-                <div class="card-footer">
-                    put comment, like and retweet icons here
+                
+                <div class="card-footer d-flex flex-row">
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">67</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">235</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                        <p class="m-auto ms-1">24</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -197,13 +270,32 @@
     <div class="container-fluid p-2 w-100 overflow-hidden">
         <div class="row justify-content-between align-items-center gx-3 mt-3">
             <div class="col-12 col-lg-6">
-                <div class="card fly-in-right">
-                    <div class="card-header">
-                        Smelly poo poo 123
-                    </div>
+                <div class="card mx-2 mb-2 fly-in-right delay-200" style="height: fit-content;">
                     <div class="card-body">
-                        <h5 class="card-body">Amazing school!</h5>
-                        <p class="card-text">Blah blah blah</p>
+                        <div class="mb-3 d-flex flex-row align-items-center">
+                            <img src="../Assets/Images/pfps/SP-pfp.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                            <p class="m-auto ms-2 me-1">Singapore Polytechnic</p>
+                            <img src="../Assets/Images/pfps/verified-badge.webp" alt="" class="rounded-circle" style="width: 15px; height: 15px;">
+                        </div>
+                        <h5 class="card-title">Happy 70th Anniversary!</h5>
+                        <p class="card-text">
+                            SP celebrates its 70th anniversary today! Visit our website to find out more
+                            on SP70!
+                        </p>
+                    </div>
+                    <div class="card-footer d-flex flex-row">
+                        <div class="px-3 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                            <p class="m-auto ms-1">237</p>
+                        </div>
+                        <div class="px-3 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                            <p class="m-auto ms-1">341</p>
+                        </div>
+                        <div class="px-3 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                            <p class="m-auto ms-1">63</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -433,73 +525,120 @@
     <div class="vh-100 mt-5 m-auto col-12 col-lg-6 d-flex flex-column justify-content-center align-items-center text-white">
         <h1 class="mb-5">Submit your well wishes!</h1>
         <div class="container h-75">
-            <form>
+            <form id="well-wishes-form">
                 <div class="position-relative w-75 m-auto mb-3 d-flex flex-row justify-content-between form-progress">
-                    <div id="form-progress-bar" class="progress position-absolute top-50 translate-middle-y bg-white" style="height: 4px; width: 0%;">
-                        hi
-                    </div>
+                    <div id="form-progress-bar" class="progress position-absolute top-50 translate-middle-y bg-white" style="height: 4px; width: 0%;"></div>
                     <button id="step-1" type="button" class="progress-step text-white active-button"></button>
                     <button id="step-2" type="button" class="progress-step text-white"></button>
                     <button id="step-3" type="button" class="progress-step text-white"></button>
                 </div>
 
                 <div id="form-step-1" class="form-step active-step">
-                    <div class="mb-3">
-                        <label for="userEmail" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="userEmail">
+                    <h3 class="fly-in-right mb-3">Let's get to know you!</h3>
+
+                    <div class="mb-3 row">
+                        <div class="col-6">
+                            <div class="form-floating text-black">
+                                <input type="text" class="form-control" id="userFName" placeholder="">
+                                <label for="userFName" class="form-label">First Name</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-floating text-black">
+                                <input type="text" class="form-control" id="userLName" placeholder="">
+                                <label for="userLName" class="form-label">Last Name</label>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mb-3">
-                        <label for="userName" class="form-label">Name address</label>
-                        <input type="email" class="form-control" id="userName">
+
+                    <label>Gender</label>
+                    <div class="mb-3 d-flex flex-row">
+                        <div class="form-check me-2">
+                            <input class="form-check-input" type="radio" name="gender" id="maleRadio" checked>
+                            <label class="form-check-label" for="maleRadio">
+                                Male
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gender" id="femaleRadio">
+                            <label class="form-check-label" for="femaleRadio">
+                                Female
+                            </label>
+                        </div>
                     </div>
-                    <div class="d-flex justify-content-end">
-                        <a href="#" class="btn btn-primary">Next</a>
+
+                    <div class="form-floating mb-3 w-25 text-black">
+                        <input type="number" class="form-control" id="userAge" placeholder="">
+                        <label for="userAge" class="form-label">Age</label>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <p id="errorBox1" class="bg-danger px-3 py-1 rounded-2" style="opacity: 0;">Errors go here</p>
+                        <button type="button" class="btn btn-primary" id="form1-next">Next</button>
                     </div>
                 </div>
+
                 <div id="form-step-2" class="form-step">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1">
+                    <h3 class="fly-in-right mb-3">Create your profile!</h3>
+
+                    <div class="form-floating mb-3">
+                        <select class="form-select" id="relationSelect">
+                            <option selected>Choose...</option>
+                            <option value="1">Student</option>
+                            <option value="2">Alumnus</option>
+                            <option value="3">Lecturer</option>
+                            <option value="3">Visitor</option>
+                        </select>
+                        <label for="relationSelect">I am a...</label>
                     </div>
-                    <div class="d-flex justify-content-end">
-                        <a href="#" class="btn btn-primary me-5">Previous</a>
-                        <a href="#" class="btn btn-primary ms-5">Next</a>
+
+                    <div class="input-group has-validation mb-3">
+                        <span class="input-group-text">@</span>
+                        <div class="form-floating text-black">
+                            <input type="text" class="form-control" id="userName" placeholder="">
+                            <label for="userName" class="form-label">Create a username!</label>
+                        </div>
+                        <div class="invalid-feedback text-white">
+                            Please choose a username!
+                        </div>
+                    </div>
+
+                    <div class="form-floating text-black mb-3">
+                        <textarea class="form-control" placeholder="Dear SP..." id="bio" style="height: 10vh;"></textarea>
+                        <label for="bio">About me... (optional)</label>
+                    </div>
+                    
+                    <div class="d-flex justify-content-between">
+                        <p id="errorBox2" class="bg-danger px-3 py-1 rounded-2" style="opacity: 0;">Errors go here</p>
+                        <div class="d-flex flex-row">
+                            <button type="button" href="#" class="btn btn-primary me-5" id="form2-prev">Previous</button>
+                            <button type="button" href="#" class="btn btn-primary ms-5" id="form2-next">Next</button>
+                        </div>
                     </div>
                 </div>
+
                 <div id="form-step-3" class="form-step">
-                    <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Em</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1">
+                    <h3 class="mb-3 fly-in-right">Wish SP a happy anniversary!</h3>
+
+                    <div class="form-floating text-black mb-3">
+                        <textarea class="form-control" placeholder="Dear SP..." id="wellwishes" style="height: 25vh;"></textarea>
+                        <label for="wellwishes">Dear SP...</label>
                     </div>
-                    <div class="d-flex justify-content-end">
-                        <a href="#" class="btn btn-primary me-5">Previous</a>
-                        <a href="#" class="btn btn-primary ms-5">Next</a>
+
+                    <div class="d-flex justify-content-between">
+                        <p id="errorBox3" class="bg-danger px-3 py-1 rounded-2" style="opacity: 0;">Errors go here</p>
+                        <div class="d-flex flex-row">
+                            <button type="button" class="btn btn-primary me-5" id="form3-prev">Previous</button>
+                            <button type="submit" class="btn btn-primary ms-5">Submit</button>
+                        </div>
                     </div>
                 </div>
             </form>
         </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     
-    <script src="../Assets/Scripts/well-wishes.js"></script>
-    
-    
-    
-    
+
+
 </body>
 </html>

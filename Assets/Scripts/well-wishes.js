@@ -1,3 +1,5 @@
+
+
 //------------------------------Variables-------------------------------------
 let typingBox = document.getElementById('typing-box');
 
@@ -9,9 +11,30 @@ let form1 = document.getElementById("form-step-1");
 let form2 = document.getElementById("form-step-2");
 let form3 = document.getElementById("form-step-3");
 
+let mainForm = document.getElementById("well-wishes-form");
+
 let formProgressBar = document.getElementById("form-progress-bar");
 
-const wordBank = ["happy", "cool", "awesome", "amazing", "beautiful", "majestic", "my home", "nice"];
+//Form Elements
+let firstName = document.getElementById("userFName");
+let lastName = document.getElementById("userLName");
+let userAge = document.getElementById("userAge");
+
+let username = document.getElementById("userName");
+
+let wellwishes = document.getElementById("wellwishes");
+
+let errorBox1 = document.getElementById("errorBox1");
+let errorBox2 = document.getElementById("errorBox2");
+let errorBox3 = document.getElementById("errorBox3");
+
+let form1next = document.getElementById("form1-next");
+let form2next = document.getElementById("form2-next");
+let form3next = document.getElementById("form3-next");
+let form2prev = document.getElementById("form2-prev");
+let form3prev = document.getElementById("form3-prev");
+
+const wordBank = ["happy", "awesome", "amazing", "beautiful", "majestic", "my home", "nice", "interesting", "breathtaking"];
 let prevIndex = -1;
 
 //------------------------------Functions---------------------------------------
@@ -74,6 +97,16 @@ const swapto3 = () => {
     formProgressBar.style.width = "100%";
 }
 
+const showError = (element, message) => {
+    element.textContent = message;
+    element.style.opacity = '1';
+}
+
+const hideError = (element) => {
+    element.textContent = "";
+    element.style.opacity = '0';
+}
+
 // keep track of previous scroll position
 let prevScrollPos = window.scrollY;
 
@@ -96,7 +129,6 @@ window.addEventListener('scroll', function() {
     
     
   }
-
   // update previous scroll position
   prevScrollPos = currentScrollPos;
 
@@ -177,6 +209,7 @@ setInterval(() => {
 // Button Event Listeners
 
 formButton1.addEventListener('click', () => {
+
     swapto1();
 })
 
@@ -186,4 +219,33 @@ formButton2.addEventListener('click', () => {
 
 formButton3.addEventListener('click', () => {
     swapto3();
+})
+
+form1next.addEventListener('click', () => {
+    if (firstName.value === '' || firstName.value === null) {
+        showError(errorBox1, "Please enter a first name!")
+    } else if (lastName.value === '' || lastName.value === null) {
+        showError(errorBox1, "Please enter a last name!");
+    } else if (userAge.value === '' || userAge.value === null) {
+        showError(errorBox1, "Please enter your age!");
+    } else {
+        hideError(errorBox1);
+        swapto2();
+    }
+})
+
+form2prev.addEventListener('click', () => {
+    swapto1();
+})
+
+form2next.addEventListener('click', () => {
+    if (username.value === '' || username.value === null) {
+        console.log("missing username");
+    } else {
+        swapto3();
+    }
+})
+
+form3prev.addEventListener('click', () => {
+    swapto2();
 })
