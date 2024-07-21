@@ -240,7 +240,7 @@ form2prev.addEventListener('click', () => {
 
 form2next.addEventListener('click', () => {
     if (username.value === '' || username.value === null) {
-        console.log("missing username");
+        showError(errorBox2, "Please enter your username!");
     } else {
         swapto3();
     }
