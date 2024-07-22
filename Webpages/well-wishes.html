@@ -528,9 +528,9 @@
             <form id="well-wishes-form">
                 <div class="position-relative w-75 m-auto mb-3 d-flex flex-row justify-content-between form-progress">
                     <div id="form-progress-bar" class="progress position-absolute top-50 translate-middle-y bg-white" style="height: 4px; width: 0%;"></div>
-                    <button id="step-1" type="button" class="progress-step text-white active-button"></button>
-                    <button id="step-2" type="button" class="progress-step text-white"></button>
-                    <button id="step-3" type="button" class="progress-step text-white"></button>
+                    <div id="step-1" class="progress-step text-white active-button"></div>
+                    <div id="step-2" class="progress-step text-white"></div>
+                    <div id="step-3" class="progress-step text-white"></div>
                 </div>
 
                 <div id="form-step-1" class="form-step active-step">
@@ -629,7 +629,7 @@
                         <p id="errorBox3" class="bg-danger px-3 py-1 rounded-2" style="opacity: 0;">Errors go here</p>
                         <div class="d-flex flex-row">
                             <button type="button" class="btn btn-primary me-5" id="form3-prev">Previous</button>
-                            <button type="submit" class="btn btn-primary ms-5">Submit</button>
+                            <button type="submit" class="btn btn-primary ms-5" id="form3-submit">Submit</button>
                         </div>
                     </div>
                 </div>

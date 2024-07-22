@@ -33,6 +33,7 @@ let form2next = document.getElementById("form2-next");
 let form3next = document.getElementById("form3-next");
 let form2prev = document.getElementById("form2-prev");
 let form3prev = document.getElementById("form3-prev");
+let form3submit = document.getElementById("form3-submit");
 
 const wordBank = ["happy", "awesome", "amazing", "beautiful", "majestic", "my home", "nice", "interesting", "breathtaking"];
 let prevIndex = -1;
@@ -105,6 +106,35 @@ const showError = (element, message) => {
 const hideError = (element) => {
     element.textContent = "";
     element.style.opacity = '0';
+}
+
+const validate1 = () => {
+    if (firstName.value === '' || firstName.value === null) {
+        showError(errorBox1, "Please enter a first name!")
+    } else if (lastName.value === '' || lastName.value === null) {
+        showError(errorBox1, "Please enter a last name!");
+    } else if (userAge.value === '' || userAge.value === null) {
+        showError(errorBox1, "Please enter your age!");
+    } else {
+        hideError(errorBox1);
+        swapto2();
+    }
+}
+
+const validate2 = () => {
+    if (username.value === '' || username.value === null) {
+        showError(errorBox2, "Please enter your username!");
+    } else {
+        swapto3();
+    }
+}
+
+const validate3 = () => {
+    if (username.value === '' || username.value === null) {
+        showError(errorBox2, "Please enter your username!");
+    } else {
+        swapto3();
+    }
 }
 
 // keep track of previous scroll position
@@ -208,30 +238,8 @@ setInterval(() => {
 
 // Button Event Listeners
 
-formButton1.addEventListener('click', () => {
-
-    swapto1();
-})
-
-formButton2.addEventListener('click', () => {
-    swapto2();
-})
-
-formButton3.addEventListener('click', () => {
-    swapto3();
-})
-
 form1next.addEventListener('click', () => {
-    if (firstName.value === '' || firstName.value === null) {
-        showError(errorBox1, "Please enter a first name!")
-    } else if (lastName.value === '' || lastName.value === null) {
-        showError(errorBox1, "Please enter a last name!");
-    } else if (userAge.value === '' || userAge.value === null) {
-        showError(errorBox1, "Please enter your age!");
-    } else {
-        hideError(errorBox1);
-        swapto2();
-    }
+    validate1();
 })
 
 form2prev.addEventListener('click', () => {
@@ -239,13 +247,13 @@ form2prev.addEventListener('click', () => {
 })
 
 form2next.addEventListener('click', () => {
-    if (username.value === '' || username.value === null) {
-        showError(errorBox2, "Please enter your username!");
-    } else {
-        swapto3();
-    }
+    validate2();
 })
 
 form3prev.addEventListener('click', () => {
     swapto2();
+})
+
+form3submit.addEventListener('click', () => {
+    validate3();
 })
