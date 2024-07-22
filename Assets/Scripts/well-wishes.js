@@ -129,14 +129,6 @@ const validate2 = () => {
     }
 }
 
-const validate3 = () => {
-    if (username.value === '' || username.value === null) {
-        showError(errorBox2, "Please enter your username!");
-    } else {
-        swapto3();
-    }
-}
-
 // keep track of previous scroll position
 let prevScrollPos = window.scrollY;
 
@@ -254,6 +246,11 @@ form3prev.addEventListener('click', () => {
     swapto2();
 })
 
-form3submit.addEventListener('click', () => {
-    validate3();
+mainForm.addEventListener("submit", (event) => {
+    if (wellwishes.value === '' || wellwishes.value === null) {
+        event.preventDefault();
+        showError(errorBox3, "Please enter your well wishes!");
+    } else {
+        swapto3();
+    }
 })
