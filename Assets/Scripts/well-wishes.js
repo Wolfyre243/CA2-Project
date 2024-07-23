@@ -3,10 +3,6 @@
 //------------------------------Variables-------------------------------------
 let typingBox = document.getElementById('typing-box');
 
-let formButton1 = document.getElementById("step-1");
-let formButton2 = document.getElementById("step-2");
-let formButton3 = document.getElementById("step-3");
-
 let form1 = document.getElementById("form-step-1");
 let form2 = document.getElementById("form-step-2");
 let form3 = document.getElementById("form-step-3");

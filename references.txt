@@ -46,7 +46,6 @@ Contents:
 "commservice-icon.png" taken from Flaticon, by DinosoftLabs
 "intern-icon.png" taken from Flaticon, by Freepik
 
-
 "lky-award.png" taken from Flaticon, by imaginationlol
 "OCBC-logo.png" taken from https://companieslogo.com/ocbc-bank/logo/
 "DELL-award.png" taken from https://resources.ripplematch.com/dell-technologies-campus-forward-award-winner-2022
@@ -62,11 +61,14 @@ Contents:
 "mental-health-2-icon.png" taken from Flaticon, by Freepik
 "SMU-logo.png" taken from https://www.drupal.org/singapore-management-university
 
+-----------------------------------------------------------------------------------
 
 3. Achievement Pictures
 "food-from-the-heart.png" taken from https://www.aasingapore.com/events-1/volunteer-aas-at-food-from-the-heart
 "jotham-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/jotham-hoe
 "khenghoon-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/ng-kheng-hoon
+
+-----------------------------------------------------------------------------------
 
 4. Well Wishes Profile Pictures
 "default.jpeg" taken from https://commons.wikimedia.org/wiki/File:Default_pfp.jpg
@@ -75,6 +77,13 @@ Contents:
 "pigeon.jpg" taken from https://www.marinaudubon.org/jrbird/first-grade/Rock-Pigeon.php
 "sunset-pfp.jpg" taken from https://toppng.com/wallpaper/sea-sunset-waves-surf-shore-horizon/450731
 "nightsky-pfp.jpg" taken from https://www.pinterest.com/pin/630996597792172255/
+"waffles-pfp.jpg" taken from https://avatars.alphacoders.com/avatars/view/311348
+"cat-pfp.jpg" taken from https://wallpapers-clan.com/pfp/funny-cat/
+"sky-pfp.jpg" taken from https://wallpapercave.com/aesthetic-sky-wallpapers
+"brocoli-pfp.jpg" taken from https://mrwallpaper.com/broccoli
+"bagel-pfp.jpg" taken from https://wallpapercave.com/w/wp3061536
+
+-----------------------------------------------------------------------------------
 
 5. Content References
 Jotham Hoe's story: https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/jotham-hoe

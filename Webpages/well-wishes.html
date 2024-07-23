@@ -62,6 +62,7 @@
     <!--Collapsing Comments-->
     <div class="container-fluid row p-0 w-100 m-auto mt-5 overflow-hidden" style="height: fit-content;">
         <!--Visible vertically on xxl, horizontally on lg, shifted below on md-->
+        <!--This is the left column (or top row for smaller devices, or non existent for phones)-->
         <div class="col-xxl-4 col-md-12 d-none d-md-flex flex-xxl-column flex-lg-row align-items-baseline justify-content-evenly justify-content-xl-between" style="height: fit-content;">
             
             <!--This is a card. It holds a comment, and this will be the template.-->
@@ -132,6 +133,7 @@
                     <h5 class="card-title">Top-notch Education!</h5>
                     <p class="card-text">
                         The lecturers at SP provide an immersive learning experience, making lessons enjoyable and fun.
+                        That's just one of the many reasons why I recommend SP!
                     </p>
                     <p style="font-size: 0.8rem; color: gray;">9:03 PM | 22 June 2024</p>
                 </div>
@@ -153,7 +155,7 @@
             </div>
             
 
-            <div class="card w-75 mx-2 mb-2 fly-in-right" style="height: fit-content;">
+            <div class="card w-75 mx-2 mb-2 fly-in-right d-none d-xl-block" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
                         <img src="../Assets/Images/pfps/sunset-pfp.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
@@ -183,7 +185,7 @@
             </div>
 
             
-            <div class="card mx-2 mb-2 fly-in-right" style="height: fit-content;">
+            <div class="card mx-2 mb-2 fly-in-right d-none d-xl-block" style="height: fit-content;">
                 <div class="card-body">
                     <div class="mb-3 d-flex flex-row">
                         <img src="../Assets/Images/pfps/nightsky-pfp.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
@@ -213,53 +215,159 @@
                 </div>
             </div>
         </div>
+
+        <!--The middle column with the title. This one is visible on all devices.-->
         <div class="col d-flex flex-column mt-5 mb-5">
-            <h1 class="m-auto text-center text-white fly-in">Over the years, SP has gathered a large crowd of alumni</h1>
+            <h1 class="m-auto text-center text-white fly-in">Over the years, SP has gathered a large crowd of students and alumni</h1>
         </div>
-        <div class="col-xxl-4 col-md-12 d-none d-md-flex flex-xxl-column flex-lg-row justify-content-evenly justify-content-xl-between">
-            <div class="card fly-in-left">
-                <div class="card-header">
-                    Smelly poo poo 123
-                </div>
+
+        <!--This is the right column (or top row for smaller devices, or non existent for phones)-->
+        
+        <div class="col-xxl-4 col-md-12 d-none d-md-flex flex-xxl-column flex-lg-row justify-content-evenly justify-content-xl-between align-items-end" style="height: fit-content;">
+            <div class="card mx-2 mb-2 fly-in-left">
                 <div class="card-body">
-                    <h5 class="card-body">Amazing school!</h5>
-                    <p class="card-text">Blah blah blah</p>
+                    <div class="mb-3 d-flex flex-row">
+                        <img src="../Assets/Images/pfps/waffle-pfp.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                        <p class="m-auto mx-2">PeacefulWaffle141</p>
+                    </div>
+                    <h5 class="card-title">Never seen anything more welcoming!</h5>
+                    <p class="card-text">
+                        I'm a freshman who has just recently joined SP, yet I can feel the warm and welcoming vibes lingering
+                        around the campus! Everyone is so friendly here!
+                    </p>
+                    <p style="font-size: 0.8rem; color: gray;">5:42 PM | 19 July 2024</p>
+                </div>
+                
+                <div class="card-footer d-flex flex-row">
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">56</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">104</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                        <p class="m-auto ms-1">4</p>
+                    </div>
                 </div>
             </div>
-            <div class="card fly-in-left delay-200">
-                <div class="card-header">
-                    Smelly poo poo 123
-                </div>
+            <div class="card mx-2 mb-2 fly-in-left delay-200">
                 <div class="card-body">
-                    <h5 class="card-body">Amazing school!</h5>
-                    <p class="card-text">Blah blah blah</p>
+                    <div class="mb-3 d-flex flex-row">
+                        <img src="../Assets/Images/pfps/cat-pfp.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                        <p class="m-auto mx-2">xsnderr</p>
+                    </div>
+                    <h5 class="card-title">Gonna just put this here...</h5>
+                    <p class="card-text">
+                        Seeing how many people are excited about SP70, I've put together a website that you can view
+                        <a href="../Webpages/index.html">here</a>! Happy 70th Anniversary!
+                    </p>
+                    <p style="font-size: 0.8rem; color: gray;">10:46 AM | 20 June 2024</p>
+                </div>
+                
+                <div class="card-footer d-flex flex-row">
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">13</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">1305</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                        <p class="m-auto ms-1">2</p>
+                    </div>
                 </div>
             </div>
-            <div class="card fly-in-left delay-300">
-                <div class="card-header">
-                    Smelly poo poo 123
-                </div>
+            <div class="card mx-2 mb-2 w-75 fly-in-left d-none d-xl-block delay-300">
                 <div class="card-body">
-                    <h5 class="card-body">Amazing school!</h5>
-                    <p class="card-text">Blah blah blah</p>
+                    <div class="mb-3 d-flex flex-row">
+                        <img src="../Assets/Images/pfps/default.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                        <p class="m-auto mx-2">gravityObeyer</p>
+                    </div>
+                    <h5 class="card-title">Give me 3 reasons to dislike SP</h5>
+                    <p class="card-text">
+                        I'll wait. As a graduating student, I'm honoured to be part of this cohesive and blissful
+                        community! From the amazing learning experiences to the friends I've made, I can't think of
+                        any reason at all to not pick SP!
+                    </p>
+                    <p style="font-size: 0.8rem; color: gray;">4:52 PM | 23 July 2024</p>
+                </div>
+                
+                <div class="card-footer d-flex flex-row">
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">39</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">458</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                        <p class="m-auto ms-1">23</p>
+                    </div>
                 </div>
             </div>
-            <div class="card fly-in-left d-none d-xl-flex delay-400">
-                <div class="card-header">
-                    Smelly poo poo 123
-                </div>
+            <div class="card mx-2 mb-2 fly-in-left delay-400">
                 <div class="card-body">
-                    <h5 class="card-body">Amazing school!</h5>
-                    <p class="card-text">Blah blah blah</p>
+                    <div class="mb-3 d-flex flex-row">
+                        <img src="../Assets/Images/pfps/sky-pfp.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                        <p class="m-auto mx-2">VIM_enjoyer</p>
+                    </div>
+                    <h5 class="card-title">You MUST come visit!</h5>
+                    <p class="card-text">
+                        I can't believe it's already SP's 70th anniversary! That said, the open house is just around the corner!
+                        Do drop by and take a look!
+                    </p>
+                    <p style="font-size: 0.8rem; color: gray;">3:21 PM | 13 June 2024</p>
+                </div>
+                
+                <div class="card-footer d-flex flex-row">
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">13</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">120</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                        <p class="m-auto ms-1">7</p>
+                    </div>
                 </div>
             </div>
-            <div class="card fly-in-left d-none d-xl-flex delay-500">
-                <div class="card-header">
-                    Smelly poo poo 123
-                </div>
+            <div class="card w-75 mx-2 mb-2 fly-in-left d-none d-xl-block delay-500">
                 <div class="card-body">
-                    <h5 class="card-body">Amazing school!</h5>
-                    <p class="card-text">Blah blah blah</p>
+                    <div class="mb-3 d-flex flex-row">
+                        <img src="../Assets/Images/pfps/default.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                        <p class="m-auto mx-2">Brocolicious</p>
+                    </div>
+                    <h5 class="card-title">Upholding the SP spirit!</h5>
+                    <p class="card-text">
+                        Just saw the SP70 concert celebrations today, and I must say; It really brings out the SP spirit!
+                        Seeing everyone cheer and come together as one really reminds me of the good old days in SP!
+                    </p>
+                    <p style="font-size: 0.8rem; color: gray;">1:45 AM | 12 July 2024</p>
+                </div>
+                
+                <div class="card-footer d-flex flex-row">
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">46</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                        <p class="m-auto ms-1">136</p>
+                    </div>
+                    <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                        <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                        <p class="m-auto ms-1">13</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -282,6 +390,7 @@
                             SP celebrates its 70th anniversary today! Visit our website to find out more
                             on SP70!
                         </p>
+                        <p style="font-size: 0.8rem; color: gray;">2:41 PM | 29 June 2024</p>
                     </div>
                     <div class="card-footer d-flex flex-row">
                         <div class="px-3 d-flex flex-row align-items-center" style="width: fit-content;">
@@ -299,25 +408,62 @@
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-2 d-none d-lg-inline">
                 <div class="card fly-in">
-                    <div class="card-header">
-                        Smelly poo poo 123
-                    </div>
                     <div class="card-body">
-                        <h5 class="card-body">Amazing school!</h5>
-                        <p class="card-text">Blah blah blah</p>
+                        <div class="mb-3 d-flex flex-row">
+                            <img src="../Assets/Images/pfps/bagel-pfp.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                            <p class="m-auto mx-2">Bagel.d</p>
+                        </div>
+                        <h5 class="card-title">I LOVE SP!</h5>
+                        <p style="font-size: 0.8rem; color: gray;">2:35 PM | 22 July 2024</p>
+                    </div>
+                    
+                    <div class="card-footer d-flex flex-row">
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                            <p class="m-auto ms-1">10</p>
+                        </div>
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                            <p class="m-auto ms-1">189</p>
+                        </div>
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                            <p class="m-auto ms-1">1</p>
+                        </div>
                     </div>
                 </div>
             </div>
+
             <div class="col-12 col-lg-4">
                 <div class="card mt-3 mt-lg-0 fly-in-left">
-                    <div class="card-header">
-                        Smelly poo poo 123
-                    </div>
                     <div class="card-body">
-                        <h5 class="card-body">Amazing school!</h5>
-                        <p class="card-text">Blah blah blah</p>
+                        <div class="mb-3 d-flex flex-row">
+                            <img src="../Assets/Images/pfps/default.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                            <p class="m-auto mx-2">roosterrice</p>
+                        </div>
+                        <h5 class="card-title">Congrats SP!</h5>
+                        <p class="card-text">
+                            I could never forget the memorable experiences I've had with SP!
+                        </p>
+                        <p style="font-size: 0.8rem; color: gray;">3:05 AM | 21 June 2024</p>
+                    </div>
+                    
+                    <div class="card-footer d-flex flex-row">
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                            <p class="m-auto ms-1">23</p>
+                        </div>
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                            <p class="m-auto ms-1">193</p>
+                        </div>
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                            <p class="m-auto ms-1">2</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -325,34 +471,91 @@
         <div class="row justify-content-between align-items-center gx-3 mt-3">
             <div class="col-6 col-lg-3">
                 <div class="card fly-in-right">
-                    <div class="card-header">
-                        Smelly poo poo 123
-                    </div>
                     <div class="card-body">
-                        <h5 class="card-body">Amazing school!</h5>
-                        <p class="card-text">Blah blah blah</p>
+                        <div class="mb-3 d-flex flex-row">
+                            <img src="../Assets/Images/pfps/default.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                            <p class="m-auto mx-2">AntSalad352</p>
+                        </div>
+                        <h5 class="card-title">Innovative Education</h5>
+                        <p class="card-text">
+                            The way that lectures are held in SP really keeps lessons interesting for students, which is
+                            something I love about SP!
+                        </p>
+                        <p style="font-size: 0.8rem; color: gray;">4:10 PM | 11 July 2024</p>
+                    </div>
+                    
+                    <div class="card-footer d-flex flex-row">
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                            <p class="m-auto ms-1">60</p>
+                        </div>
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                            <p class="m-auto ms-1">123</p>
+                        </div>
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                            <p class="m-auto ms-1">3</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-2 d-none d-lg-inline">
                 <div class="card fly-in" style="animation-delay: 300ms;">
-                    <div class="card-header">
-                        Smelly poo poo 123
-                    </div>
                     <div class="card-body">
-                        <h5 class="card-body">Amazing school!</h5>
-                        <p class="card-text">Blah blah blah</p>
+                        <div class="mb-3 d-flex flex-row">
+                            <img src="../Assets/Images/pfps/default.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                            <p class="m-auto mx-2">Gmorcad</p>
+                        </div>
+                        <h5 class="card-title">SP is the BEST Polytechnic!</h5>
+                        
+                        <p style="font-size: 0.8rem; color: gray;">7:27 PM | 16 July 2024</p>
+                    </div>
+                    
+                    <div class="card-footer d-flex flex-row">
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                            <p class="m-auto ms-1">12</p>
+                        </div>
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                            <p class="m-auto ms-1">345</p>
+                        </div>
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                            <p class="m-auto ms-1">5</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="col-6 col-lg-7">
                 <div class="card fly-in-left">
-                    <div class="card-header">
-                        Smelly poo poo 123
-                    </div>
                     <div class="card-body">
-                        <h5 class="card-body">Amazing school!</h5>
-                        <p class="card-text">Blah blah blah</p>
+                        <div class="mb-3 d-flex flex-row">
+                            <img src="../Assets/Images/pfps/hamncheese-pfp.jpg" alt="" class="rounded-circle" style="width: 40px; height: 40px;">
+                            <p class="m-auto mx-2">HamNCheese</p>
+                        </div>
+                        <h5 class="card-title">No regrets!</h5>
+                        <p class="card-text">
+                            I never once regretted picking SP or my course! The journey was fun and interesting, even though there
+                            were some bumps along the way. Happy Anniversary SP!
+                        </p>
+                        <p style="font-size: 0.8rem; color: gray;">2:04 PM | 05 July 2024</p>
+                    </div>
+                    
+                    <div class="card-footer d-flex flex-row">
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/comment-icon.png" alt="" width="25" height="25">
+                            <p class="m-auto ms-1">84</p>
+                        </div>
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/heart-icon.png" alt="" width="25" height="25">
+                            <p class="m-auto ms-1">326</p>
+                        </div>
+                        <div class="px-1 d-flex flex-row align-items-center" style="width: fit-content;">
+                            <img src="../Assets/Images/icons/share-icon.png" alt="" width="20" height="20">
+                            <p class="m-auto ms-1">34</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -528,9 +731,9 @@
             <form id="well-wishes-form">
                 <div class="position-relative w-75 m-auto mb-3 d-flex flex-row justify-content-between form-progress">
                     <div id="form-progress-bar" class="progress position-absolute top-50 translate-middle-y bg-white" style="height: 4px; width: 0%;"></div>
-                    <div id="step-1" class="progress-step text-white active-button"></div>
-                    <div id="step-2" class="progress-step text-white"></div>
-                    <div id="step-3" class="progress-step text-white"></div>
+                    <div class="progress-step text-white active-button"></div>
+                    <div class="progress-step text-white"></div>
+                    <div class="progress-step text-white"></div>
                 </div>
 
                 <div id="form-step-1" class="form-step active-step">
@@ -583,8 +786,8 @@
 
                     <div class="form-floating mb-3">
                         <select class="form-select" id="relationSelect">
-                            <option selected>Choose...</option>
-                            <option value="1">Student</option>
+                            
+                            <option selected value="1">Student</option>
                             <option value="2">Alumnus</option>
                             <option value="3">Lecturer</option>
                             <option value="3">Visitor</option>
