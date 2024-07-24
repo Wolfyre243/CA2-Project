@@ -88,4 +88,12 @@ button.timeline-button:hover {
     text-shadow: 0px 0px 30px rgba(20, 20, 20, 0.8);
 }
 
+.box-shadow {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.6);
+}
+
+.box-shadow-light {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
 /* 4. Statistic Cards Styles */

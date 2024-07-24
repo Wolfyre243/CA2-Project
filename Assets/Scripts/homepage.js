@@ -58,6 +58,48 @@ flyInTags.forEach((tag) => {
     flyInObserver.observe(tag);
 })
 
+//Fly in from left animation observer
+const flyInLeftObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("in-view-fly-left");
+            entry.target.classList.remove("not-in-view-fly-out");
+        } else {
+            entry.target.classList.remove("in-view-fly-left");
+            entry.target.classList.add("not-in-view-fly-out");
+        }
+    })
+}, {
+    rootMargin: "0px",
+    threshold: [0, 0.1, 1]
+});
+
+const flyInLeftTags = document.querySelectorAll('.fly-in-left');
+flyInLeftTags.forEach((tag) => {
+    flyInLeftObserver.observe(tag);
+})
+
+//Fly in from right animation observer
+const flyInRightObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("in-view-fly-right");
+            entry.target.classList.remove("not-in-view-fly-out");
+        } else {
+            entry.target.classList.remove("in-view-fly-right");
+            entry.target.classList.add("not-in-view-fly-out");
+        }
+    })
+}, {
+    rootMargin: "0px",
+    threshold: [0, 0.1, 1]
+});
+
+const flyInRightTags = document.querySelectorAll('.fly-in-right');
+flyInRightTags.forEach((tag) => {
+    flyInRightObserver.observe(tag);
+})
+
 //Timeline Observer
 const timelineObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -71,7 +113,7 @@ const timelineObserver = new IntersectionObserver((entries) => {
     })
 }, {
     rootMargin: "0px",
-    threshold: [0, 0.5, 1]
+    threshold: 0.1
 })
 
 const timelineTags = document.querySelectorAll('.timeline-flow');

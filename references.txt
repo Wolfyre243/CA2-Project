@@ -6,6 +6,7 @@ Contents:
 1. Homepage References
 - A. Infinite Gallery (Hero Section)
 - B. Timeline
+- C. Statistics
 
 2. Icons/Logos
 
@@ -31,8 +32,18 @@ Contents:
 1B Timeline:
 "new-students.jpg" taken from https://www.nas.gov.sg/archivesonline/photographs/record-details/9c22aa0e-1162-11e3-83d5-0050568939ad
 "new-students-2.jpg" taken from https://www.nas.gov.sg/archivesonline/photographs/record-details/9c33cc4b-1162-11e3-83d5-0050568939ad
+"graduation-ceremony.jpg" taken from https://www.sp.edu.sg/sp/about-sp/the-sp-story/sp-timeline
+"dover-campus.jpg" taken from https://www.sp.edu.sg/sp/about-sp/the-sp-story/sp-timeline
+"more-students.jpg" taken from https://www.nas.gov.sg/archivesonline/photographs/record-details/9c229675-1162-11e3-83d5-0050568939ad
+"lky-speaking.jpg" taken from https://www.nas.gov.sg/archivesonline/photographs/record-details/da944855-1161-11e3-83d5-0050568939ad
+"final-dover-campus.jpg" taken from https://www.sp.edu.sg/sp/about-sp/the-sp-story/sp-timeline
+"revamped-sp.jpg" taken from https://www.nas.gov.sg/archivesonline/photographs/record-details/4f3ab62a-1162-11e3-83d5-0050568939ad
+"sp-convention-centre.jpg" taken from https://www.sp.edu.sg/sp/about-sp/the-sp-story/sp-timeline
+"spcc-modern.jpg" taken from https://www.ugme.sg/our-projects/educational-institution/other-educational-institution-projects/
+"sp-aerial-view.jpg" taken from https://www.sp.edu.sg/engineering-cluster/spes/2018/tm02ei
 
-
+1C Statistics
+"sp-staff.jpg" taken from https://www.sp.edu.sg/sp/news/sp/Spotlight-on-staff-who-serve-with-excellence
 -----------------------------------------------------------------------------------------------
 2. Icons
 
@@ -60,6 +71,8 @@ Contents:
 "cameras-icon.png" taken from Flaticon, by Freepik
 "mental-health-2-icon.png" taken from Flaticon, by Freepik
 "SMU-logo.png" taken from https://www.drupal.org/singapore-management-university
+"sp70-banner.png" taken from https://www.sp.edu.sg/sp70's footer
+
 
 -----------------------------------------------------------------------------------
 
@@ -88,3 +101,4 @@ Contents:
 5. Content References
 Jotham Hoe's story: https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/jotham-hoe
 Ng Kheng Hoon's Story: https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/ng-kheng-hoon
+Statistics: https://www.sp.edu.sg/docs/default-source/comms-docs/sp-ar-2023_pdfa-compressed_final_290923.pdf
