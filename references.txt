@@ -51,6 +51,10 @@ Contents:
 "collaborative-robot.jpg" taken from https://www.sp.edu.sg/engineering-cluster/eee/courses/full-time-diplomas/computer-engineering/project-gallery
 "greenpower-iet.jpg" taken from https://www.sp.edu.sg/engineering-cluster/eee/courses/full-time-diplomas/computer-engineering/project-gallery
 
+1E Upcoming events
+"music-fest.jpg" taken from https://www.sp.edu.sg/sp70#popup3
+"sp-openhouse.jpg" taken from https://www.sp.edu.sg/sp70#popup2
+"staff-appreciations.jpg" taken from https://www.sp.edu.sg/sp70#popup1
 -----------------------------------------------------------------------------------------------
 2. Icons
 
@@ -80,14 +84,17 @@ Contents:
 "SMU-logo.png" taken from https://www.drupal.org/singapore-management-university
 "sp70-banner.png" taken from https://www.sp.edu.sg/sp70's footer
 
-
+"facebook-icon.png" taken from Flaticon, by Freepik
+"instagram-icon.png" taken from Flaticon, by Pixel Perfect
+"youtube-icon.png" taken from Flaticon, by Freepik
+"tik-tok-icon.png" taken from Flaticon, by Freepik
 -----------------------------------------------------------------------------------
 
 3. Achievement Pictures
 "food-from-the-heart.png" taken from https://www.aasingapore.com/events-1/volunteer-aas-at-food-from-the-heart
 "jotham-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/jotham-hoe
 "khenghoon-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/ng-kheng-hoon
-
+"sp-top-grads.jpg" taken from https://www.sp.edu.sg/
 -----------------------------------------------------------------------------------
 
 4. Well Wishes Profile Pictures
