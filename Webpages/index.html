@@ -265,7 +265,7 @@
         <h1 class="text-white text-center m-auto mt-5 mb-5">Statistics</h1>
 
         <div id="statistic-cards" class="container-fluid p-0 row w-100 m-auto mt-0">
-            <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
+            <div class="col-xxl-3 col-sm-12 col-md-6 d-flex p-4">
                 <div class="card border-0 m-auto w-100 fly-in-right box-shadow-light">
                     <img src="../Assets/Images/infinite-gallery-r1/sp-students-on-stairs.jpg" alt="" class="card-img-top">
                     <div class="card-body">
@@ -276,7 +276,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
+
+            <div class="col-xxl-3 col-sm-12 col-md-6 d-flex p-4">
                 <div class="card border-0 m-auto w-100 fly-in-right box-shadow-light" style="animation-delay: 200ms;">
                     <img src="../Assets/Images/infinite-gallery-r1/sp-grads.jpg" alt="" class="card-img-top">
                     <div class="card-body">
@@ -289,7 +290,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
+
+            <div class="col-xxl-3 col-sm-12 col-md-6 d-flex p-4">
                 <div class="card border-0 m-auto w-100 fly-in-right box-shadow-light" style="animation-delay: 200ms;">
                     <img src="../Assets/Images/infinite-gallery-r1/sp-robotics-room.jpg" alt="" class="card-img-top">
                     <div class="card-body">
@@ -301,7 +303,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-xxl-3 col-md-12 col-lg-6 d-flex p-4">
+
+            <div class="col-xxl-3 col-sm-12 col-md-6 d-flex p-4">
                 <div class="card border-0 m-auto w-100 fly-in-right box-shadow-light" style="animation-delay: 200ms;">
                     <img src="../Assets/Images/sp-staff.jpg" alt="" class="card-img-top">
                     <div class="card-body">
@@ -317,38 +320,78 @@
      </div>
      
      <!--Empty Content Slot-->
-    <div class="container-fluid p-0 vh-100 d-flex flex-column">
+    <div class="container-fluid p-0 vh-100 flex-column d-none d-lg-flex">
         <h1 class="m-auto mb-4 text-white">SP's Projects</h1>
-        <div class="container-fluid m-auto mt-4 w-50">
-            <div id="project-carousel" class="carousel slide">
+        <div class="container-fluid m-auto mt-4" style="width: 60%;">
+            <div id="project-carousel" class="carousel slide box-shadow-light" data-bs-ride="carousel">
 
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
                     <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#project-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
                 </div>
 
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <img src="../Assets/Images/project-gallery/urban-farming.jpg" class="d-block w-100 rounded-3" alt="..." >
+                        <div class="carousel-caption d-none d-md-block rounded-3 p-3" style="background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px);">
+                            <h5>AI-Enabled Solutions using FGPA Technology</h5>
+                            <p>Students from DCPE, DEEE, DES, DAE and DASE use an AI chip to automate farming</p>
+                        </div>
                     </div>
                     
                     <div class="carousel-item">
                         <img src="../Assets/Images/project-gallery/collaborative-robot.jpg" class="d-block w-100 rounded-3" alt="...">
+                        <div class="carousel-caption d-none d-md-block rounded-3 p-3" style="background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px);">
+                            <h5>i4.0 Smart Workflow Solutions</h5>
+                            <p>
+                                Students from DASE, DCPE, DEEE, DESM, DEB created a smart factory setup in an autonomous system that stimuates
+                                manufacturing processes.
+                            </p>
+                        </div>
                     </div>
 
                     <div class="carousel-item">
                         <img src="../Assets//Images/project-gallery/autonomous-robot.jpg" class="d-block w-100 rounded-3" alt="...">
+                        <div class="carousel-caption d-none d-md-block rounded-3 p-3" style="background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px);">
+                            <h5>Autonomous Mobile Robot (AMR) for Outdoor Delivery</h5>
+                            <p>
+                                Students from DASE, DEEE, DESM and DEB created a mobile robot to facilitate the delivery food,
+                                and navigate across terrain.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="../Assets//Images/project-gallery/greenpower-iet.jpg" class="d-block w-100 rounded-3" alt="...">
+                        <div class="carousel-caption d-none d-md-block rounded-3 p-3" style="background-color: rgba(0, 0, 0, 0.6); backdrop-filter: blur(5px);">
+                            <h5>Greenpower IET Formula 24+ Electric Racing Vehicle</h5>
+                            <p>
+                                Students from DASE, DEEE and DESM embarked on a project to create a vehicle equipped with
+                                AI monitoring technology.
+                            </p>
+                        </div>
                     </div>
                 </div>
-                
-                
             </div>
         </div>
     </div>
 
-    <div class="container-fluid p-0 vh-100 d-flex">
-        <h1 class="m-auto">followed by upcoming events here</h1>
+    <div class="container-fluid p-0 vh-100 d-flex flex-column">
+        <h1 class="m-auto text-white">Celebrate SP70 with us!</h1>
+        <div class="row w-100 m-auto">
+            <div class="col-4">
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SP Open House 2024</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     
     <footer class="bg-black d-flex justify-content-center p-5" style="height: fit-content;">

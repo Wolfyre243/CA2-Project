@@ -5,7 +5,7 @@
     color: rgb(77, 82, 85);
     font-size: 60vh;
     position: absolute; 
-    top: -22vh; 
+    top: -25vh; 
     left: 0; 
     z-index: -1;
 }
@@ -17,7 +17,7 @@
     color: rgb(77, 82, 85);
     font-size: 60vh;
     position: absolute; 
-    bottom: -22.5vh; 
+    bottom: -25vh; 
     left: 0; 
     z-index: -1;
     animation-delay: 300ms;

@@ -59,9 +59,6 @@ const pickWord = (arr) => {
 }
 
 const swapto1 = () => {
-    formButton1.classList.add('active-button');
-    formButton2.classList.remove('active-button');
-    formButton3.classList.remove('active-button');
 
     form1.classList.add('active-step');
     form2.classList.remove('active-step');
@@ -71,9 +68,6 @@ const swapto1 = () => {
 }
 
 const swapto2 = () => {
-    formButton1.classList.remove('active-button');
-    formButton2.classList.add('active-button');
-    formButton3.classList.remove('active-button');
 
     form1.classList.remove('active-step');
     form2.classList.add('active-step');
@@ -83,9 +77,6 @@ const swapto2 = () => {
 }
 
 const swapto3 = () => {
-    formButton1.classList.remove('active-button');
-    formButton2.classList.remove('active-button');
-    formButton3.classList.add('active-button');
     
     form1.classList.remove('active-step');
     form2.classList.remove('active-step');

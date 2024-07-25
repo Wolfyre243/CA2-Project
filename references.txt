@@ -44,6 +44,13 @@ Contents:
 
 1C Statistics
 "sp-staff.jpg" taken from https://www.sp.edu.sg/sp/news/sp/Spotlight-on-staff-who-serve-with-excellence
+
+1D Project Carousel
+"urban-farming.jpg" taken from https://www.sp.edu.sg/engineering-cluster/eee/courses/full-time-diplomas/computer-engineering/project-gallery
+"autonomous-robot.jpg" taken from https://www.sp.edu.sg/engineering-cluster/eee/courses/full-time-diplomas/computer-engineering/project-gallery
+"collaborative-robot.jpg" taken from https://www.sp.edu.sg/engineering-cluster/eee/courses/full-time-diplomas/computer-engineering/project-gallery
+"greenpower-iet.jpg" taken from https://www.sp.edu.sg/engineering-cluster/eee/courses/full-time-diplomas/computer-engineering/project-gallery
+
 -----------------------------------------------------------------------------------------------
 2. Icons
 
