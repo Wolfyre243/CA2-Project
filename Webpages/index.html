@@ -49,8 +49,8 @@
     </nav>
 
     <div id="hero-section" class="container-fluid p-0 d-flex flex-column">
-        <div id="hero-start" class="container-fluid p-0 position-fixed bg-black">
-            <div id="gallery" class="container-fluid p-0 overflow-hidden position-fixed top-50 start-50 translate-middle">
+        <div id="hero-start" class="container-fluid p-0 bg-black">
+            <div id="gallery" class="container-fluid p-0 overflow-hidden position-fixed top-50 start-50 translate-middle z-1">
                 <div id="img-gallery-1" class="p-1">
                     <img src="../Assets/Images/infinite-gallery-r1/about-sp_1.jpg" alt="">
                     <img src="../Assets/Images/infinite-gallery-r1/sp-aerial-view.jpg" alt="">
@@ -82,12 +82,10 @@
                     <img src="../Assets/Images/infinite-gallery-r1/old-sp_1.png" alt="">
                     <img src="../Assets/Images/infinite-gallery-r1/sp-longbridge.png" alt="">
                 </div>
-                
             </div>
-            
-            <div style="height: 100vh;" class="container-fluid w-100 bg-black opacity-50 position-absolute top-50 start-50 translate-middle"></div>
 
-            <h1 id="hero-header" class="text-center position-fixed top-50 start-50 translate-middle">SP70</h1>
+            <div class="container-fluid vh-100 w-100 bg-black opacity-50 position-relative top-50 start-50 translate-middle z-2"></div>
+            <h1 id="hero-header" class="text-center align-content-center position-fixed top-50 start-50 translate-middle z-3">SP70</h1>
             
         </div>
 
@@ -431,7 +429,7 @@
                 </div>
                 <div class="col-12 col-md-6">
                     <h5>Follow Us!</h5>
-                    <div class="m-auto mb-2 d-flex flex-row">
+                    <div class="m-auto mb-2 d-flex flex-row" style="z-index: 4;">
                         <a href="https://www.facebook.com/singaporepolytechnic"><img src="../Assets/Images/icons/facebook-icon.png" width="30" height="30" alt=""></a> <!--"facebook-icon.png" taken from Flaticon, by Freepik-->
                         <a href="https://www.instagram.com/singaporepoly" class="ms-3"><img src="../Assets/Images/icons/instagram-icon.png" width="30" height="30" alt=""></a> <!--"instagram-icon.png" taken from Flaticon, by Pixel Perfect-->
                         <a href="https://www.youtube.com/singaporepolytechnic" class="ms-3"><img src="../Assets/Images/icons/youtube-icon.png" width="30" height="30" alt=""></a> <!--"youtube-icon.png" taken from Flaticon, by Freepik-->
