@@ -7,6 +7,10 @@ let form1 = document.getElementById("form-step-1");
 let form2 = document.getElementById("form-step-2");
 let form3 = document.getElementById("form-step-3");
 
+let formIndicator1 = document.getElementById("form-indicator1");
+let formIndicator2 = document.getElementById("form-indicator2");
+let formIndicator3 = document.getElementById("form-indicator3");
+
 let mainForm = document.getElementById("well-wishes-form");
 
 let formProgressBar = document.getElementById("form-progress-bar");
@@ -64,6 +68,10 @@ const swapto1 = () => {
     form2.classList.remove('active-step');
     form3.classList.remove('active-step');
 
+    formIndicator1.classList.add('active-button');
+    formIndicator2.classList.remove('active-button');
+    formIndicator3.classList.remove('active-button');
+
     formProgressBar.style.width = "0%";
 }
 
@@ -73,6 +81,10 @@ const swapto2 = () => {
     form2.classList.add('active-step');
     form3.classList.remove('active-step');
 
+    formIndicator1.classList.remove('active-button');
+    formIndicator2.classList.add('active-button');
+    formIndicator3.classList.remove('active-button');
+
     formProgressBar.style.width = "50%";
 }
 
@@ -81,6 +93,10 @@ const swapto3 = () => {
     form1.classList.remove('active-step');
     form2.classList.remove('active-step');
     form3.classList.add('active-step');
+
+    formIndicator1.classList.remove('active-button');
+    formIndicator2.classList.remove('active-button');
+    formIndicator3.classList.add('active-button');
 
     formProgressBar.style.width = "100%";
 }

@@ -109,6 +109,11 @@ Contents:
 "sky-pfp.jpg" taken from https://wallpapercave.com/aesthetic-sky-wallpapers
 "brocoli-pfp.jpg" taken from https://mrwallpaper.com/broccoli
 "bagel-pfp.jpg" taken from https://wallpapercave.com/w/wp3061536
+"bear-pfp.jpg" taken from https://www.biologicaldiversity.org/species/mammals/grizzly_bear/
+"egg.jpg" taken from https://www.nytimes.com/2019/01/13/style/egg-instagram-most-liked.html
+"paris.jpg" taken from https://avatars.alphacoders.com/avatars/view/305582
+"pool-pfp.jpg" taken from https://en.reformsports.com/what-is-an-olympic-swimming-pool/
+"butter-pfp.jpg" taken from https://www.creedfoodservice.co.uk/350020-lakeland-dairies-salted-butter-20x250g.html
 
 -----------------------------------------------------------------------------------
 
