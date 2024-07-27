@@ -9,6 +9,9 @@ let heroFade = document.getElementById('hero-fade');
 let heroStart = document.getElementById('hero-start');
 let body = document.body;
 
+const timelineNodes = document.querySelectorAll('.timeline-node');
+
+
 //Event Listeners
 document.addEventListener('scroll', () => {
     //For debugging purposes
@@ -119,4 +122,20 @@ const timelineObserver = new IntersectionObserver((entries) => {
 const timelineTags = document.querySelectorAll('.timeline-flow');
 timelineTags.forEach((tag) => {
     timelineObserver.observe(tag);
+})
+
+timelineNodes.forEach((node) => {
+    const yearlinks = node.querySelectorAll('.year-link');
+    node.addEventListener('mouseover', () => {
+        yearlinks.forEach((link) => {
+            link.classList.add('reveal-link');
+            link.classList.remove('hide-link');
+        });
+    });
+    node.addEventListener('mouseout', () => {
+        yearlinks.forEach((link) => {
+            link.classList.remove('reveal-link');
+            link.classList.add('hide-link');
+        });
+    });
 })

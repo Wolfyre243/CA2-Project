@@ -146,6 +146,15 @@
     animation: intersection-bento-fade-out 2s ease-in both;
 }
 
+.reveal-link {
+    animation: intersection-fly-in-right 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.hide-link {
+    opacity: 0;
+}
+
 @keyframes cursor-blink {
     from, to {
         background-color: transparent;

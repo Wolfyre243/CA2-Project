@@ -48,6 +48,31 @@
     animation-delay: 300ms;
 }
 
+#architecture::before {
+    margin-left: -5%;
+    content: "ARCHI";
+    font-weight: 1000;
+    color: rgb(112, 92, 47);
+    font-size: 60vh;
+    position: absolute; 
+    top: -22vh; 
+    left: 2%; 
+    z-index: -1;
+}
+
+#architecture::after {
+    margin-left: -3%;
+    content: "TECTURE";
+    font-weight: 1000;
+    color: rgb(112, 92, 47);
+    font-size: 60vh;
+    position: absolute; 
+    bottom: -20.5vh; 
+    left: 0; 
+    z-index: -1;
+    animation-delay: 300ms;
+}
+
 div.top-grad::before {
     content: "TOP GRADUATE";
     color: rgba(27, 27, 27, 0.7);

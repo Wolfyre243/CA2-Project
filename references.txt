@@ -83,6 +83,8 @@ Contents:
 "mental-health-2-icon.png" taken from Flaticon, by Freepik
 "SMU-logo.png" taken from https://www.drupal.org/singapore-management-university
 "sp70-banner.png" taken from https://www.sp.edu.sg/sp70's footer
+"blueprint-icon.png" taken from Flaticon, by monkik
+"SIA-logo.png" taken from https://sqft.com.sg/about-us/
 
 "facebook-icon.png" taken from Flaticon, by Freepik
 "instagram-icon.png" taken from Flaticon, by Pixel Perfect
@@ -94,6 +96,7 @@ Contents:
 "food-from-the-heart.png" taken from https://www.aasingapore.com/events-1/volunteer-aas-at-food-from-the-heart
 "jotham-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/jotham-hoe
 "khenghoon-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/ng-kheng-hoon
+"dread-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/drea-lai-jie-ning
 "sp-top-grads.jpg" taken from https://www.sp.edu.sg/
 -----------------------------------------------------------------------------------
 
@@ -114,10 +117,13 @@ Contents:
 "paris.jpg" taken from https://avatars.alphacoders.com/avatars/view/305582
 "pool-pfp.jpg" taken from https://en.reformsports.com/what-is-an-olympic-swimming-pool/
 "butter-pfp.jpg" taken from https://www.creedfoodservice.co.uk/350020-lakeland-dairies-salted-butter-20x250g.html
+"gamer-pfp.jpg" taken from https://www.apple.com/sg/shop/product/HQF22ZM/A/riotpwr-cloud-gaming-controller
+"snake-pfp.jpg" taken from https://www.georgeinstitute.org.in/our-impact/policy-and-recommendations/snakes-the-ecosystem-and-us-its-time-we-change
 
 -----------------------------------------------------------------------------------
 
 5. Content References
 Jotham Hoe's story: https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/jotham-hoe
 Ng Kheng Hoon's Story: https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/ng-kheng-hoon
+Drea Lai's Story: https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/drea-lai-jie-ning
 Statistics: https://www.sp.edu.sg/docs/default-source/comms-docs/sp-ar-2023_pdfa-compressed_final_290923.pdf
