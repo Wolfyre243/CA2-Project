@@ -99,7 +99,7 @@ div#img-gallery-2 {
 
 .year-link {
     text-decoration: none;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.2s;
     color: rgba(255, 255, 255, 0.6);
     opacity: 0;
 }
