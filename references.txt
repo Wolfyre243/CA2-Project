@@ -86,6 +86,8 @@ Contents:
 "blueprint-icon.png" taken from Flaticon, by monkik
 "SIA-logo.png" taken from https://sqft.com.sg/about-us/
 "musclearm-icon.png" taken from Flaticon, by Bert Flint
+"house-icon.png" taken from Flaticon, by Freepik
+
 
 "facebook-icon.png" taken from Flaticon, by Freepik
 "instagram-icon.png" taken from Flaticon, by Pixel Perfect
