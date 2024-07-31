@@ -91,10 +91,15 @@ div#img-gallery-2 {
 .timeline-node {
     border: none;
     transition: all 0.1s ease-in-out;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .timeline-node:hover {
     border: 3px solid rgb(246, 50, 62);
+}
+
+#timeline p {
+    font-size: 1.2em;
 }
 
 .year-link {
