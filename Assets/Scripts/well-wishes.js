@@ -128,6 +128,7 @@ const validate2 = () => {
     if (username.value === '' || username.value === null) {
         showError(errorBox2, "Please enter your username!");
     } else {
+        hideError(errorBox2);
         swapto3();
     }
 }
@@ -254,6 +255,9 @@ mainForm.addEventListener("submit", (event) => {
         event.preventDefault();
         showError(errorBox3, "Please enter your well wishes!");
     } else {
+        hideError(errorBox3);
         swapto3();
     }
 })
+
+

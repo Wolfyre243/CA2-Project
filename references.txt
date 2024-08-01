@@ -88,7 +88,7 @@ Contents:
 "clapperboard-icon.png" taken from Flaticon, by Maxim Basinski Premium
 "paintbrush-icon.png" taken from Flaticon, by Freepik
 "yt-icon.webp" taken from https://www.vecteezy.com/free-png/youtube-logo
-"cameras-icon.png" taken from Flaticon, by Freepik
+"camera-icon.png" taken from Flaticon, by Freepik
 "mental-health-2-icon.png" taken from Flaticon, by Freepik
 "SMU-logo.png" taken from https://www.drupal.org/singapore-management-university
 "sp70-banner.png" taken from https://www.sp.edu.sg/sp70's footer
@@ -109,7 +109,7 @@ Contents:
 "food-from-the-heart.png" taken from https://www.aasingapore.com/events-1/volunteer-aas-at-food-from-the-heart
 "jotham-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/jotham-hoe
 "khenghoon-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/ng-kheng-hoon
-"dread-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/drea-lai-jie-ning
+"drea-sp-graduation-2024.png" taken from https://www.sp.edu.sg/sp/about-sp/why-sp/student-success-stories/successful-graduates-2024/drea-lai-jie-ning
 "sp-top-grads.jpg" taken from https://www.sp.edu.sg/
 
 -----------------------------------------------------------------------------------
@@ -133,6 +133,7 @@ Contents:
 "butter-pfp.jpg" taken from https://www.creedfoodservice.co.uk/350020-lakeland-dairies-salted-butter-20x250g.html
 "gamer-pfp.jpg" taken from https://www.apple.com/sg/shop/product/HQF22ZM/A/riotpwr-cloud-gaming-controller
 "snake-pfp.jpg" taken from https://www.georgeinstitute.org.in/our-impact/policy-and-recommendations/snakes-the-ecosystem-and-us-its-time-we-change
+"hamncheese-pfp.jpg" taken from https://www.quora.com/How-is-a-wrap-different-from-a-basic-sandwich
 
 -----------------------------------------------------------------------------------
 
