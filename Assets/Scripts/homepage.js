@@ -124,6 +124,10 @@ timelineTags.forEach((tag) => {
     timelineObserver.observe(tag);
 })
 
+/*
+    A simple event listener to check whether the user is hovering over a timeline node.
+    If so, show the previous and upcoming years beside the timeline node.
+*/
 timelineNodes.forEach((node) => {
     const yearlinks = node.querySelectorAll('.year-link');
     node.addEventListener('mouseover', () => {

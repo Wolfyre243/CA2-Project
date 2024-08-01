@@ -1,3 +1,9 @@
+/*
+    This stylesheet contains the styles for achievements.html
+    There are helper classes here to add glows to elements in the webpage.
+    The other style rules help to apply words as backgrounds for the achievements page layout.
+*/
+
 #comp-eng::before {
     margin-left: -5%;
     content: "COMPUTER";
@@ -83,6 +89,8 @@ div.top-grad::before {
     text-align: center;
     z-index: -1;
 }
+
+/* Helper classes */
 
 .blue-glow {
     box-shadow: 0px 0px 50px rgba(0,31,78,0.6);

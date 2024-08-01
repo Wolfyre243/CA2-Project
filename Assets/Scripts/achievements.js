@@ -1,3 +1,8 @@
+/*
+    This script controls the fly-in animations for the achievements.html page.
+*/
+
+//Make the words fly in on view.
 const typingObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {

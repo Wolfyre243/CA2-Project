@@ -1,4 +1,4 @@
-
+//This script file adds validtion and animations to the well-wishes.html page.
 
 //------------------------------Variables-------------------------------------
 let typingBox = document.getElementById('typing-box');
@@ -35,10 +35,12 @@ let form2prev = document.getElementById("form2-prev");
 let form3prev = document.getElementById("form3-prev");
 let form3submit = document.getElementById("form3-submit");
 
+//An array of words to type
 const wordBank = ["happy", "awesome", "amazing", "beautiful", "majestic", "my home", "nice", "interesting", "breathtaking"];
 let prevIndex = -1;
 
 //------------------------------Functions---------------------------------------
+//Type a word with the typewriter effect
 function typewriter(element, text, i = 0) {
     
     console.log("typing"); //debugging
@@ -53,6 +55,7 @@ function typewriter(element, text, i = 0) {
     setTimeout(() => typewriter(element, text, i+1), 50)
 }
 
+//Pick a word from the word array
 const pickWord = (arr) => {
     if (prevIndex == arr.length - 1) {
         prevIndex = 0;
@@ -62,6 +65,7 @@ const pickWord = (arr) => {
     return arr[prevIndex];
 }
 
+//Swap to form1
 const swapto1 = () => {
 
     form1.classList.add('active-step');
@@ -75,6 +79,7 @@ const swapto1 = () => {
     formProgressBar.style.width = "0%";
 }
 
+//Swap to form2
 const swapto2 = () => {
 
     form1.classList.remove('active-step');
@@ -88,6 +93,7 @@ const swapto2 = () => {
     formProgressBar.style.width = "50%";
 }
 
+//Swap to form3
 const swapto3 = () => {
     
     form1.classList.remove('active-step');
@@ -101,16 +107,19 @@ const swapto3 = () => {
     formProgressBar.style.width = "100%";
 }
 
+//Shows the error box
 const showError = (element, message) => {
     element.textContent = message;
     element.style.opacity = '1';
 }
 
+//Hides the error box
 const hideError = (element) => {
     element.textContent = "";
     element.style.opacity = '0';
 }
 
+//Validates form1 data
 const validate1 = () => {
     if (firstName.value === '' || firstName.value === null) {
         showError(errorBox1, "Please enter a first name!")
@@ -124,6 +133,7 @@ const validate1 = () => {
     }
 }
 
+//Validates form2 data
 const validate2 = () => {
     if (username.value === '' || username.value === null) {
         showError(errorBox2, "Please enter your username!");
@@ -133,11 +143,9 @@ const validate2 = () => {
     }
 }
 
-// keep track of previous scroll position
+//Hides the navbar when scrolling down and shows it when going up.
 let prevScrollPos = window.scrollY;
-
 window.addEventListener('scroll', function() {
-  // current scroll position
   const currentScrollPos = window.scrollY;
 
   if (prevScrollPos > currentScrollPos) {
@@ -152,17 +160,14 @@ window.addEventListener('scroll', function() {
     setTimeout(() => {
         document.querySelector('.navbar').classList.remove('sticky-lg-top');
     }, 100)
-    
-    
   }
-  // update previous scroll position
+  
   prevScrollPos = currentScrollPos;
 
 });
 
 //-----------------------------Observers----------------------------------
 //Fly in animation observer
-
 const flyInObserver = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -233,7 +238,6 @@ setInterval(() => {
 }, 5000)
 
 // Button Event Listeners
-
 form1next.addEventListener('click', () => {
     validate1();
 })

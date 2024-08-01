@@ -4,8 +4,7 @@
     Contents:
     1. Hero Section Styles
     2. Infinite Image Gallery Styles
-    3. Timeline Carousel Styles
-    4. Statistic Card Styles
+    3. Timeline Styles
 */
 
 /* 1. Hero Section Styles */
@@ -63,30 +62,7 @@ div#img-gallery-2 {
     grid-row: 2;
 }
 
-/* 3. Time Carousel Styles */
-#time-carousel-item1 {
-    background: url(../Images/infinite-gallery-r1/old-sp_1.png) center/cover no-repeat;
-}
-
-#time-carousel-item2 {
-    background: url(../Images/infinite-gallery-r1/old-sp_1.png) center/cover no-repeat;
-}
-
-#time-carousel-item3 {
-    background: url(../Images/infinite-gallery-r1/old-sp_1.png) center/cover no-repeat;
-}
-
-.text-shadow {
-    text-shadow: 0px 0px 30px rgba(20, 20, 20, 0.8);
-}
-
-.box-shadow {
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.6);
-}
-
-.box-shadow-light {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-}
+/* 3. Timeline Styles */
 
 .timeline-node {
     border: none;
@@ -113,3 +89,18 @@ div#img-gallery-2 {
     transform: scale(1.2,1.2);
     color: rgba(255, 255, 255, 1);
 }
+
+/* Extra Helper Styles */
+
+.text-shadow {
+    text-shadow: 0px 0px 30px rgba(20, 20, 20, 0.8);
+}
+
+.box-shadow {
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.6);
+}
+
+.box-shadow-light {
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+
