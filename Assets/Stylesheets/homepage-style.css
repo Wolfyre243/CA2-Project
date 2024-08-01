@@ -51,7 +51,6 @@ div.inf-gallery-right {
 
 #gallery {
     display: grid;
-    grid-template-rows: 25vh, 25vh, 25vh, 25vh;
     gap: 1px;   
 }
 
