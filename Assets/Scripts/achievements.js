@@ -57,7 +57,7 @@ const flyInRightObserver = new IntersectionObserver((entries) => {
     })
 }, {
     rootMargin: "0px",
-    threshold: [0, 0.2, 1]
+    threshold: 0
 });
 
 const flyInRightTags = document.querySelectorAll('.fly-in-right');
